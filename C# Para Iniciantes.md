@@ -61,6 +61,14 @@ Figura 3 retirada do livro.
 
 #### 🗺️A classe é uma abstração do mundo real. Ela modela quais atores e ações executam as tarefas. Eles possuem características comuns como nome, idade, cpf e dessa forma, as classes precisam refletir estas propriedades. Criaremos uma classe para exemplo:
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print5.png?raw=true)
+
+#### 🌍 No print acima, só temos as propriedades da classe que podem ser utilizadas, mas não temos os métodos, que são as ações própriamente ditas para serem executadas. Os métodos representam as ações dos atores. Agora vamos alterar os métodos para possibilitar a gerente aprovar as horas de um funcionário informando o CPF do funcionário. 
+
+
+
+
+
 
 
 

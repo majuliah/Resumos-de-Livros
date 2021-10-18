@@ -14,13 +14,15 @@ namespace Exemplo1
     
     public class Gerente
     {
+        //estrutura que representa uma classe em C#
         public string Nome { get; set; }
         public int Idade { get; set; }
         public int Cpf { get; set; }
+        public void AprovarHorasDeFuncionarios(int cpf){
+        //lógica para aprovar horas dos funcionários
+        }
     }
-    //aqui criamos uma classe e dentro dela inserimos atributos
-    //relevantes para a identificação da gerente. Também foi criado
-    //propriedades para serem utilizadas no sistema.
+
     
 }
 
