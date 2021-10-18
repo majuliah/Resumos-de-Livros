@@ -22,7 +22,7 @@
 
 #### Programadores escrevem o código-fonte em alguma linguagem, como C#, F#, entre outras. Esse código é transformado em um Assembly IL Code que é convertido pra CLR. A CLR unifica todos os códigos de diferentes linguagens pra somente uma interpretação (como se um japonês falasse com um norueguês em uma linguagem como o inglês) e dessa linguagem é convertido pra linguagem de máquina, a que o computador entende e compila que é a do sistema nativo do SO. Assim que todo o processo foi executado, a execução do programa é feita pelo framework e o software consegue executar as instruções. Uma imagem que represente isso: 
 
-![](C:\Users\ladyv\Documents\anotacoesDelivros\img\print1.png)
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print1.png?raw=true)
 
 Figura 3 retirada do livro.
 
