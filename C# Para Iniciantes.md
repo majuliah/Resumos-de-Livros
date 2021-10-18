@@ -47,6 +47,12 @@ Figura 3 retirada do livro.
 
 
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print3.png?raw=true)
+
+#### Agora podemos criar novas classes em namespaces e chamá-las para dentro de outras namespaces como a seguir:
+
+
+
 
 
 
