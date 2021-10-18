@@ -39,7 +39,7 @@ Figura 3 retirada do livro.
 - [x] **Estruturas**
 - [x] **Delegates**
 
-#### Os namespaces servem pra organizar a nossa área de trabalho em uma IDE. Separamos arquivos por funções específicas e assim mantemos a organização. Nos ajudam a deixar diferentes tipos, mas relacionados no mesmo lugar. Se criarmos duas classes com o mesmo nome dentro de um namespace, daremos
+#### Os namespaces servem pra organizar a nossa área de trabalho em uma IDE. Separamos arquivos por funções específicas e assim mantemos a organização. Nos ajudam a deixar diferentes tipos, mas relacionados no mesmo lugar. Se criarmos duas classes com o mesmo nome dentro de um namespace, haverá conflito. Você pode criar classes com o mesmo nome em diferentes namespaces. Aqui um exemplo de erro por duplicação de nomes de classes em um mesmo namespace:
 
 
 
