@@ -22,7 +22,7 @@
 
 #### Programadores escrevem o código-fonte em alguma linguagem, como C#, F#, entre outras. Esse código é transformado em um Assembly IL Code que é convertido pra CLR. A CLR unifica todos os códigos de diferentes linguagens pra somente uma interpretação (como se um japonês falasse com um norueguês em uma linguagem como o inglês) e dessa linguagem é convertido pra linguagem de máquina, a que o computador entende e compila que é a do sistema nativo do SO. Assim que todo o processo foi executado, a execução do programa é feita pelo framework e o software consegue executar as instruções. Uma imagem que represente isso: 
 
-![image-20211017193452968](C:\Users\ladyv\AppData\Roaming\Typora\typora-user-images\image-20211017193452968.png)
+![](C:\Users\ladyv\Documents\anotacoesDelivros\img\print1.png)
 
 Figura 3 retirada do livro.
 
@@ -34,10 +34,10 @@ Figura 3 retirada do livro.
 
 #### Eles são usados para o propósito de separação e organização de código. Geralmente podem conter os seguintes membros:
 
-- [ ] **Classes**
-- [ ] **Interfaces**
-- [ ] **Estruturas**
-- [ ] **Delegates**
+- [x] **Classes**
+- [x] **Interfaces**
+- [x] **Estruturas**
+- [x] **Delegates**
 
 #### Os namespaces servem pra organizar a nossa área de trabalho em uma IDE. Separamos arquivos por funções específicas e assim mantemos a organização. Nos ajudam a deixar diferentes tipos, mas relacionados no mesmo lugar. Se criarmos duas classes com o mesmo nome dentro de um namespace, daremos
 
