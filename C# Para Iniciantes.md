@@ -1,6 +1,6 @@
 # Livro C# para iniciantes🧐
 
-### Ele pode ser encontrado através deste [link](https://livrocsharp.com.br) e é gratuito e livre para distribuir.🍃
+### Ele pode ser encontrado através deste [link](https://livrocsharp.com.br) e é gratuito , podendo ser distribuído livremente.🍃
 
 ### ![](https://media1.giphy.com/media/SKyeoZj4B5RCg/giphy.gif?cid=790b761120d5b38535c3cd17264a4bc4e9779ade0f9f7c97&rid=giphy.gif&ct=g)
 
@@ -45,8 +45,6 @@ Figura 3 retirada do livro.
 
 #### Como podemos ver, temos dentro de um mesmo namespace duas classes Program. Basta alterar o nome da classe que não haverá mais erro 🐱‍🏍
 
-
-
 ![](https://github.com/majuliah/livrosLidos/blob/main/img/print3.png?raw=true)
 
 #### Agora podemos criar novas classes em namespaces e chamá-las para dentro de outras namespaces como a seguir:
@@ -58,6 +56,16 @@ Figura 3 retirada do livro.
 
 
 ## **CLASSES**🐱‍👓
+
+#### Antes de começarmos, usaremos alguns conceitos de UML para entendermos classes, como ATORES que significa toda e qualquer pessoa que utiliza o software que está sendo desenvolvido. Por exemplo, uma funcionária do caixa, ou uma gerente. Os processos são todas as ações executadas por este ator. A análise de domínio de negócio nos ajuda a saber quem é quem e o que faz. No programa, as classes são a forma de representarmos estes atores e processos.
+
+#### 🗺️A classe é uma abstração do mundo real. Ela modela quais atores e ações executam as tarefas. Eles possuem características comuns como nome, idade, cpf e dessa forma, as classes precisam refletir estas propriedades. Criaremos uma classe para exemplo:
+
+
+
+
+
+
 
 ##  
 
