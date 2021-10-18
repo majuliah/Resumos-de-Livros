@@ -65,6 +65,14 @@ Figura 3 retirada do livro.
 
 #### 🌍 No print acima, só temos as propriedades da classe que podem ser utilizadas, mas não temos os métodos, que são as ações própriamente ditas para serem executadas. Os métodos representam as ações dos atores. Agora vamos alterar os métodos para possibilitar a gerente aprovar as horas de um funcionário informando o CPF do funcionário. 
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print6.png?raw=true)
+
+
+
+## **OBJETOS**🐱‍👓
+
+
+
 
 
 
