@@ -51,6 +51,16 @@ Figura 3 retirada do livro.
 
 #### Agora podemos criar novas classes em namespaces e chamá-las para dentro de outras namespaces como a seguir:
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print4.png?raw=true)
+
+#### Desse jeito, informamos ao programa em qual namespace estamos buscando as informações que queremos usar no namespace atual. Uma boa prática recomendada por devs e pela própria Microsoft é colocar o nome dos projetos da seguinte forma:                                                                                                                                                                                                                          ***NomeDaEmpresa.NomeDoProjeto.CamadaDoProjeto.Funcionalidade*** 
+
+
+
+## **CLASSES**🐱‍👓
+
+##  
+
 
 
 
