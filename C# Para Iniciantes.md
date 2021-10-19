@@ -73,7 +73,13 @@ Figura 3 retirada do livro.
 
 #### As classes são abstrações da vida real dentro de um programa, ou seja, descrevem através de códigos quais os atores e as ações refletidas ao mundo real. Sabemos que as classes tem métodos(ações) e propriedades mas não sabemos como o computador trata o processamento dessas informações e aqui entram os ***Objetos***. Um objeto nada mais é que a compilação do código escrito e sendo colocado na memória para que seja interpretado e executado. 
 
-#### O processo de criar o objeto e alocá-lo na memória é denominado ***Instanciamento de Classe***.  Aqui temos um exemplo de código deste processo
+#### O processo de criar o objeto e alocá-lo na memória é denominado ***Instanciamento de Classe***.  Aqui temos um exemplo de código deste processo:
+
+
+
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print7.png?raw=true)
+
+#### A palavra new no C# é reservada por analisar o código feito na classe e então disponibilizar na memória do computador para utilização. Basicamente a palavra new cria o objeto.  Após instanciar a classe (criar o objeto), é possível analisar quais atributos e métodos estão vinculados. Podemos acessar com um . no fim da variável. 
 
 
 

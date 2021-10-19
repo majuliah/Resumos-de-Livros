@@ -28,6 +28,7 @@ namespace Exemplo1
         public static void Main4()
         {
             var objetoGerente = new Gerente();
+            
         }
     }
 
