@@ -71,6 +71,14 @@ Figura 3 retirada do livro.
 
 ## **OBJETOS**🐱‍👓
 
+#### As classes são abstrações da vida real dentro de um programa, ou seja, descrevem através de códigos quais os atores e as ações refletidas ao mundo real. Sabemos que as classes tem métodos(ações) e propriedades mas não sabemos como o computador trata o processamento dessas informações e aqui entram os ***Objetos***. Um objeto nada mais é que a compilação do código escrito e sendo colocado na memória para que seja interpretado e executado. 
+
+#### O processo de criar o objeto e alocá-lo na memória é denominado ***Instanciamento de Classe***.  Aqui temos um exemplo de código deste processo
+
+
+
+
+
 
 
 

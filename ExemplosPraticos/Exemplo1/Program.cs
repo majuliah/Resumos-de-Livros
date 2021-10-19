@@ -23,6 +23,14 @@ namespace Exemplo1
         }
     }
 
+    public class InstanciaObjeto
+    {
+        public static void Main4()
+        {
+            var objetoGerente = new Gerente();
+        }
+    }
+
     
 }
 
