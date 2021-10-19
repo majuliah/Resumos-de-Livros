@@ -81,6 +81,20 @@ Figura 3 retirada do livro.
 
 #### A palavra new no C# é reservada por analisar o código feito na classe e então disponibilizar na memória do computador para utilização. Basicamente a palavra new cria o objeto.  Após instanciar a classe (criar o objeto), é possível analisar quais atributos e métodos estão vinculados. Podemos acessar com um . no fim da variável. 
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print8.png?raw=true)
+
+
+
+## **VARIÁVEIS**🐱‍👓
+
+#### Variáveis são pequenos espaços da memória em que você pode atribuir valores. Elas podem ser alteradas ao longo do processamento do programa. No C# as variáveis tem tipos específicos e precisamos atribuir a elas estes tipos.
+
+
+
+## Capítulo 3 (Funções internas do C#)📔:
+
+
+
 
 
 
