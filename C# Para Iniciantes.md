@@ -93,6 +93,12 @@ Figura 3 retirada do livro.
 
 ## Capítulo 3 (Funções internas do C#)📔:
 
+#### Oi 
+
+
+
+
+
 
 
 
