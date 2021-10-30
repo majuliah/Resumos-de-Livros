@@ -121,7 +121,11 @@ Figura 3 retirada do livro.
 
     #### Método que conta a quantidade de caracteres ou espaços da memória usadas para formar aquela string. Conta quantidade de caracteres incluindo espaços. É bastante usado quando queremos definir um tamanho limite de caracteres que um usuário pode entrar. Um exemplo são os endereços. Geralmente são usados 50 caracteres para endereçar, e se passar disso os dados não são gravados, só são gravados os 50 primeiros. Vamos testar na variável empresa:
 
-    
+    ![](https://github.com/majuliah/livrosLidos/blob/main/img/print11.png?raw=true)
+
+  
+
+  - 
 
   
 
