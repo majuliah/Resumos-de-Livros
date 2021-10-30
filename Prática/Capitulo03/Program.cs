@@ -8,7 +8,11 @@ namespace Capitulo03
     {
         static void Main(string[] args)
         {
-            WriteLine("Hello World!");
+            WriteLine("---MICROSOFT STUDIES COMPANY---");
+            string empresa = " Meu nome é Majúlia! ";
+            
+            WriteLine("O TRIM retira espaços antes e depois das expressões: ");
+            WriteLine($"Expressão sem espaços: {empresa.Trim()}");
         }
     }
 }

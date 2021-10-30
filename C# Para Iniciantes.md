@@ -99,11 +99,19 @@ Figura 3 retirada do livro.
 
 - ## Funções de texto:
 
-  #### Usadas para manipular *strings*. Podemos limpar espaços, obter quantidade de caracteres, transformar tudo para minúscula ou maiúscula, trocar conteúdos e centenas de outras possibilidades. Faremos alguns exemplos, e como estamos usando funcionalidades somente do console, a interação para exibir informações na tela se dá através dos comandos ***Console.WriteLine***("Expressão aqui dentro"); No entando, o código fica muito grande e podemos contornar isso na lista de using e referenciar o namespace deste comando de forma estática e usar apenas o WriteLine("Expressão"). Isso está explícito na primeira linha do programa. E tudo que estiver dentro do namespace citado poderá usar a froma abreviada do console, deste jeito:
+  #### Usadas para manipular *strings*. Podemos limpar espaços, obter quantidade de caracteres, transformar tudo para minúscula ou maiúscula, trocar conteúdos e centenas de outras possibilidades. Faremos alguns exemplos, e como estamos usando funcionalidades somente do console, a interação para exibir informações na tela se dá através dos comandos ***Console.WriteLine***("Expressão aqui dentro"); No entando, o código fica muito grande e podemos contornar isso na lista de using e referenciar o namespace deste comando de forma estática e usar apenas o WriteLine("Expressão"). Isso está explícito na primeira linha do programa. Somente pode ser utilizado na MAIN(arquivo principal) E tudo que estiver dentro do namespace citado poderá usar a froma abreviada do console, deste jeito:
+
+  ![](https://github.com/majuliah/livrosLidos/blob/main/img/print9.png?raw=true)
 
   
 
+- ## ***TRIM***
 
+  #### Método que retira todos os espaços em branco antes e depois de uma expressão. Mas para espaços no meio da expressão, precisamos escrever um método que faça isto e não é o caso do TRIM. Geralmente é utilizado em cadastros onde usuários precisam entrar com informações ou até mesmo em caso de trazer informações de outros arquivos de texto, CSV, Excel, dados exportados de banco de dados... Nos ajuda muito a capturar apenas expressão em si.
+
+  
+
+  
 
 
 
