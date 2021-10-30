@@ -109,6 +109,20 @@ Figura 3 retirada do livro.
 
   #### Método que retira todos os espaços em branco antes e depois de uma expressão. Mas para espaços no meio da expressão, precisamos escrever um método que faça isto e não é o caso do TRIM. Geralmente é utilizado em cadastros onde usuários precisam entrar com informações ou até mesmo em caso de trazer informações de outros arquivos de texto, CSV, Excel, dados exportados de banco de dados... Nos ajuda muito a capturar apenas expressão em si.
 
+  ![](https://github.com/majuliah/livrosLidos/blob/main/img/print10.png?raw=true)
+
+  
+
+  	#### Como o C# não aceita mais de um SVM (Static Void Main) por projeto, precisamos abrir o arquivo com a extensão csproj e adicionar uma linha <StartupObject> nomeDoNamespace.funcoesTexto</> e DEBUGAR o arquivo. Assim o C# executará normalmente aquele arquivo.  
+
+  
+
+  - ## LENGTH
+
+    #### Método que conta a quantidade de caracteres ou espaços da memória usadas para formar aquela string. Conta quantidade de caracteres incluindo espaços. É bastante usado quando queremos definir um tamanho limite de caracteres que um usuário pode entrar. Um exemplo são os endereços. Geralmente são usados 50 caracteres para endereçar, e se passar disso os dados não são gravados, só são gravados os 50 primeiros. Vamos testar na variável empresa:
+
+    
+
   
 
   

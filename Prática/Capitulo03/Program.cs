@@ -13,6 +13,15 @@ namespace Capitulo03
             
             WriteLine("O TRIM retira espaços antes e depois das expressões: ");
             WriteLine($"Expressão sem espaços: {empresa.Trim()}");
+            
+            WriteLine("Length devolve a quantidade de caracteres:");
+            WriteLine($"Tamanho do texto: {empresa.Length}");
+            
+            
+            
+            
+            
+            
         }
     }
 }
