@@ -17,6 +17,12 @@ namespace Capitulo03
             WriteLine("Length devolve a quantidade de caracteres:");
             WriteLine($"Tamanho do texto: {empresa.Length}");
             
+            WriteLine("ToUpper deixa tudo em maiúsculo: ");
+            WriteLine($"Empresa com toUpper: {empresa.ToUpper()}");
+            
+            WriteLine("ToLower deixa tudo em minúsculo: ");
+            WriteLine($"Empresa com ToLower {empresa.ToLower()}");
+            
             
             
             

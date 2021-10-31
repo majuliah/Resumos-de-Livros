@@ -125,10 +125,20 @@ Figura 3 retirada do livro.
 
   
 
-  - 
+  - ## TOUPER / TOLOWER
 
+    #### Transforma todas as expressões em somente maiúsculo. Usado em casos de formatação, onde queremos chamar atenção de nomes, cargos ou informações importantes. Basta informar a cadeia desejada seguida do método ToUpper().
+
+    #### ToLower transforma a sentença em minúsculo. Também usado para formatações de textos e conversões dos valores de variáveis. Cadeia desejada seguida de ToLower();
   
-
+    
+  
+    
+  
+    
+  
+  
+  
   
 
 
