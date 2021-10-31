@@ -131,6 +131,26 @@ Figura 3 retirada do livro.
 
     #### ToLower transforma a sentença em minúsculo. Também usado para formatações de textos e conversões dos valores de variáveis. Cadeia desejada seguida de ToLower();
   
+    ![](https://github.com/majuliah/livrosLidos/blob/main/img/print12.png?raw=true)
+  
+    
+  
+    #### Importante ressaltar que para a linguagem C#, comparar expressões com conteúdos iguais, nem sempre teremos resultados iguais. 
+  
+    (print)
+  
+    
+  
+    #### No caso dois, se a variável que está tudo em maiúsculo passar pela função ***toLower***, e ficar com tudo minúsculo, ela vai ser igual a variavel ***nomeLower***? Sim. 
+  
+    #### No caso três: Estamos comparando entre as duas variáveis***.Equals***. Mas no entando, está explícito para ignorar maiúsculas e minúsculas. O uso do ***StringComparison*** nos permite definir o tipo de comparação. No caso o tipo de comparação é o ***OrdinalIgnoreCase***.
+  
+    #### Importante ressaltar que quando fazemos interações com o usuário em mecanismos de pesquisa, convém converter tudo para ***Upper*** ou ***Lower*** e depois comparar para que o resultado não seja diferente. Melhor ainda é definir o tipo de comparação com o ***StringComparsion***. 
+  
+    
+  
+    
+  
     
   
     
