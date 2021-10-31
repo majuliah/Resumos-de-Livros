@@ -58,13 +58,19 @@ namespace Capitulo03
            {
                WriteLine("3 - Nomes diferentes");
            }
+           string empresa = " Meu nome é Majúlia! ";
            
+           WriteLine("Remove - extrai x caracteres a partir da esquerda da expressão");
+           WriteLine($"Texto esquerdo: {empresa.Remove(5)}");
            
+           WriteLine("Captura apenas o primeiro nome das pessoas: ");
+           string[] nomes = {"Fabricio dos Santos","José da Silva","Roberta Brasil"};
 
-
-
-
-
+           foreach (var n in nomes)
+           {
+               WriteLine($"{n.Remove(n.IndexOf(" "))}");
+           }
+           
         }
     }
 }
