@@ -165,19 +165,27 @@ Figura 3 retirada do livro.
 
     #### Usado para substituir cadeias de expressões. São dois parâmetros: qual texto iremos substituir e qual o conteúdo da substituição; Casos comuns são para tratamentos de dados, como por exemplo troca de endereços.
 
-    
+    ![](https://github.com/majuliah/livrosLidos/blob/main/img/print16.png?raw=true)
 
     
 
-    
+  - ## SPLIT
+
+    #### Muito usado em situações de tratamento de dados de arquivos de texto onde é preciso separar cadeias de caracteres através de um caractere chave. Mais usado é o espaço, mas pode ser qualquer outra coisa, como uma vírgula por exemplo.
 
     
 
-    
+  
 
-    
+  
 
-    
+  
+
+  
+
+  
+
+  
 
   
 

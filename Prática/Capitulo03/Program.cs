@@ -24,11 +24,11 @@ namespace Capitulo03
             WriteLine($"Empresa com ToLower {empresa.ToLower()}");
             */
 
-           string nomeUpper = "AIRTON SENNA";
-           string nomeLower = "airton senna";
+           //string nomeUpper = "AIRTON SENNA";
+           //string nomeLower = "airton senna";
            //Comparação 1:
            
-           if (nomeUpper == nomeLower)
+          /* if (nomeUpper == nomeLower)
            {
                WriteLine("1 nomes iguais");
            }
@@ -76,7 +76,18 @@ namespace Capitulo03
            WriteLine("Replace - Troca os parâmetros");
            WriteLine(empresa);
            WriteLine($"Nova empresa: {novaEmpresa.Replace("Microsoft", "Google")}");
-           
+           */
+          
+          WriteLine("Split divide a cadeia.");
+          string nivelLivro = "Este livro é o básico de C#";
+          string[] blocos = nivelLivro.Split(' ');
+          int cont = 1;
+
+          foreach (var exp in blocos)
+          {
+              WriteLine($"Texto {cont++} : {exp}");
+          }
+          WriteLine($"Qtde de palavras: {blocos.Count()}");
 
         }
     }
