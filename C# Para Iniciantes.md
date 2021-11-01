@@ -130,49 +130,57 @@ Figura 3 retirada do livro.
     #### Transforma todas as expressões em somente maiúsculo. Usado em casos de formatação, onde queremos chamar atenção de nomes, cargos ou informações importantes. Basta informar a cadeia desejada seguida do método ToUpper().
 
     #### ToLower transforma a sentença em minúsculo. Também usado para formatações de textos e conversões dos valores de variáveis. Cadeia desejada seguida de ToLower();
-  
+
     ![](https://github.com/majuliah/livrosLidos/blob/main/img/print12.png?raw=true)
-  
+
     
-  
+
     #### Importante ressaltar que para a linguagem C#, comparar expressões com conteúdos iguais, nem sempre teremos resultados iguais. 
-  
+
     ![](https://github.com/majuliah/livrosLidos/blob/main/img/print13.png?raw=true)
-  
+
     
-  
+
     #### No caso dois, se a variável que está tudo em maiúsculo passar pela função ***toLower***, e ficar com tudo minúsculo, ela vai ser igual a variavel ***nomeLower***? Sim. 
-  
+
     
-  
+
     ![](https://github.com/majuliah/livrosLidos/blob/main/img/print14.png?raw=true)
-  
+
     #### No caso três: Estamos comparando entre as duas variáveis***.Equals***. Mas no entando, está explícito para ignorar maiúsculas e minúsculas. O uso do ***StringComparison*** nos permite definir o tipo de comparação. No caso o tipo de comparação é o ***OrdinalIgnoreCase***.
-  
+
     #### Importante ressaltar que quando fazemos interações com o usuário em mecanismos de pesquisa, convém converter tudo para ***Upper*** ou ***Lower*** e depois comparar para que o resultado não seja diferente. Melhor ainda é definir o tipo de comparação com o ***StringComparsion***. 
-  
+
     
-  
+
     - ## REMOVE
-  
+
       #### Serve para pegar uma quantidade de caracteres à esquerda de uma expressão. Exemplo, os 10 primeiros caracteres. Vamos pegar a variável empresa e pedir apenas os 5 primeiros caracteres da sentença. 
-  
-      #### Em seguida vamos criar um array de nomes com 3 elementos nomes 
-  
+
+      ![](https://github.com/majuliah/livrosLidos/blob/main/img/print15.png?raw=true)
+
+      #### Ele retornou "Meu" como o pedido no remove. Depois disso fizemos um array com 3 nomes completos e montamos um looping para que retornasse apenas o primeiro nome de cada elemento.  A cada interação do looping ele pega o nome completo e pesquisa a posição do espaço em branco. Por exemplo, o primeiro nome tem 8 letras, então ele usa o remove para extrair somente a quantidade de caracteres antes do espaço.
+
+    - ## REPLACE
+
+    #### Usado para substituir cadeias de expressões. São dois parâmetros: qual texto iremos substituir e qual o conteúdo da substituição; Casos comuns são para tratamentos de dados, como por exemplo troca de endereços.
+
     
-  
+
     
-  
+
     
-  
+
     
-  
+
     
-  
+
     
+
+    
+
   
-  
-  
+
   
 
 

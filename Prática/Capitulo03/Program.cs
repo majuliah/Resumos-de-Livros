@@ -58,7 +58,7 @@ namespace Capitulo03
            {
                WriteLine("3 - Nomes diferentes");
            }
-           string empresa = " Meu nome é Majúlia! ";
+           string empresa = "Microsoft Corporation";
            
            WriteLine("Remove - extrai x caracteres a partir da esquerda da expressão");
            WriteLine($"Texto esquerdo: {empresa.Remove(5)}");
@@ -69,8 +69,15 @@ namespace Capitulo03
            foreach (var n in nomes)
            {
                WriteLine($"{n.Remove(n.IndexOf(" "))}");
+               WriteLine(" ");
            }
+
+           string novaEmpresa = empresa;
+           WriteLine("Replace - Troca os parâmetros");
+           WriteLine(empresa);
+           WriteLine($"Nova empresa: {novaEmpresa.Replace("Microsoft", "Google")}");
            
+
         }
     }
 }
