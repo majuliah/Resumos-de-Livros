@@ -78,17 +78,21 @@ namespace Capitulo03
            WriteLine($"Nova empresa: {novaEmpresa.Replace("Microsoft", "Google")}");
            */
           
-          WriteLine("Split divide a cadeia.");
+          //WriteLine("Split divide a cadeia.");
           string nivelLivro = "Este livro é o básico de C#";
-          string[] blocos = nivelLivro.Split(' ');
-          int cont = 1;
+          //string[] blocos = nivelLivro.Split(' ');
+          //int cont = 1;
 
-          foreach (var exp in blocos)
-          {
-              WriteLine($"Texto {cont++} : {exp}");
-          }
-          WriteLine($"Qtde de palavras: {blocos.Count()}");
+          //foreach (var exp in blocos)
+          //{
+          //    WriteLine($"Texto {cont++} : {exp}");
+          //}
+          //WriteLine($"Qtde de palavras: {blocos.Count()}");
 
+          WriteLine($"O resultado da substring (5, 14) é: {nivelLivro.Substring(5, 14)}");
+          
+          
+          
         }
     }
 }

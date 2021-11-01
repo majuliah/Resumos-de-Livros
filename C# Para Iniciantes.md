@@ -175,24 +175,34 @@ Figura 3 retirada do livro.
 
     ![](https://github.com/majuliah/livrosLidos/blob/main/img/print17.png?raw=true)
 
-    #### Explicação:
+    #### 
 
-     
-
-  
-
-  
+     #### No exemplo nós criamos uma variável nivelLivro e atribuímos a ela uma sentença(uma frase). Depois criamos um vetor blocos e dentro do vetor atribuímos as palavras da frase nivelLivro. Então toda palavra vai para uma posição no vetor. Ele reconhece que é uma palavra porque toda vez que dá espaço ele capta aquela string. 
+    
+    #### Então fizemos um forEach. Para cada expressão dentro do array blocos, nós vamos printar a palavra. Depois usamos o Count()  para contar quantos elementos tem dentro daquele array.
 
   
 
   
 
-  
+  - ## SUBSTRING
+
+    #### Método substring extrai um texto se você infomar qual a posição inicial. Pode-se ou não informar o tamanho do texto que se quer captar e se não informarmos, todo o texto a partir da primeira posição informada será capturado.  Veja o caso da variável nivelLivro:
+
+    
 
   
 
   
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 
 
