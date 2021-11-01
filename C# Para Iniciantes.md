@@ -201,29 +201,35 @@ Figura 3 retirada do livro.
   
     ## Agora um desafio. Como fazer para somar todas as quantidades de frutas contidas na cesta? 🤔
   
-    
+    ![](https://github.com/majuliah/livrosLidos/blob/main/img/print20.png?raw=true)
   
-    
-  
-  
+  #### Aqui nós fizemos: Criamos uma variável para receber a quantidade. A quantidade recebe ela mesma mais a conversão do primeiro caractere da sentença para inteiro. o limite é o espaço, então ele só vai pegar o número. Que é da primeira posição até o espaço. Como já sabemos que as quantidades estão na primeira posição, conseguimos montar esta lógica. 
   
   
+
+- ## ISNULLOREMPTY:
+
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
