@@ -189,10 +189,14 @@ Figura 3 retirada do livro.
 
     #### Método substring extrai um texto se você infomar qual a posição inicial. Pode-se ou não informar o tamanho do texto que se quer captar e se não informarmos, todo o texto a partir da primeira posição informada será capturado.  Veja o caso da variável nivelLivro:
 
+    ![](https://github.com/majuliah/livrosLidos/blob/main/img/print18.png?raw=true)
+
+    #### Pegamos o conteúdo e ditamos que a posição inicial era 5 e a final 14, o que resultou na frase "livro é basi". Agora vejamos o caso do array de compras, como fazemos para extrair somente os nomes das frutas, sem as quantidades?  
+
     
-
   
-
+  
+  
   
   
   

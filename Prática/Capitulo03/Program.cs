@@ -91,8 +91,16 @@ namespace Capitulo03
 
           WriteLine($"O resultado da substring (5, 14) é: {nivelLivro.Substring(5, 14)}");
           
+          WriteLine("Substring é usado para retirar partes de textos");
+          string[] cesta = {"5 Laranjas", "8 Limões", "14 Peras", "18 Melancias"};
+
+          foreach (var fruta in cesta)
+          {
+              WriteLine($"{fruta.Substring(fruta.IndexOf(" ") + 1)}");
+          }
           
-          
+
+
         }
     }
 }
