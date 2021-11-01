@@ -173,7 +173,11 @@ Figura 3 retirada do livro.
 
     #### Muito usado em situações de tratamento de dados de arquivos de texto onde é preciso separar cadeias de caracteres através de um caractere chave. Mais usado é o espaço, mas pode ser qualquer outra coisa, como uma vírgula por exemplo.
 
-    
+    ![](https://github.com/majuliah/livrosLidos/blob/main/img/print17.png?raw=true)
+
+    #### Explicação:
+
+     
 
   
 
