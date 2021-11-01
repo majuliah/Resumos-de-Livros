@@ -93,11 +93,16 @@ namespace Capitulo03
           
           WriteLine("Substring é usado para retirar partes de textos");
           string[] cesta = {"5 Laranjas", "8 Limões", "14 Peras", "18 Melancias"};
-
+          int qtde = 0;
           foreach (var fruta in cesta)
           {
               WriteLine($"{fruta.Substring(fruta.IndexOf(" ") + 1)}");
+
+              qtde += Convert.ToInt32(fruta.Substring(0, fruta.IndexOf(" ")));
+              WriteLine($"Qtde total: {qtde:n0}");
           }
+          
+          
           
 
 

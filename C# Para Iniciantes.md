@@ -191,9 +191,25 @@ Figura 3 retirada do livro.
 
     ![](https://github.com/majuliah/livrosLidos/blob/main/img/print18.png?raw=true)
 
-    #### Pegamos o conteúdo e ditamos que a posição inicial era 5 e a final 14, o que resultou na frase "livro é basi". Agora vejamos o caso do array de compras, como fazemos para extrair somente os nomes das frutas, sem as quantidades?  
+    #### Pegamos o conteúdo e ditamos que a posição inicial era 5 e a final 14, o que resultou na frase "livro é basi". Agora vejamos o caso do array de compras, como fazemos para extrair somente os nomes das frutas, sem as quantidades? 
 
+    #### ![](https://github.com/majuliah/livrosLidos/blob/main/img/print19.png?raw=true) 
+  
+    ## O que aconteceu aqui? 🤔
+  
+    #### Criamos um looping foreach. Cada iteração a gente precisa saber qual a posição do primeiro espaço em branco, e para isso usamos o fruta.IndexOf(" "). Aqui estamos pedindo o índice do espaço em branco dentro do frutas. Somando +1, estamos querendo a próxima posição, ou seja, o nome da fruta. Depois do espaço vem o nome das frutas então é isso que estamos fazendo. Então temos a posição inicial da sentença que queremos. Como não estamos informando quantos caracteres queremos, o Substring retorna o nome completo da fruta. Em outras palavras, pegamos qualquer coisa após o número (hehehe) 
+  
+    ## Agora um desafio. Como fazer para somar todas as quantidades de frutas contidas na cesta? 🤔
+  
     
+  
+    
+  
+  
+  
+  
+  
+  
   
   
   
