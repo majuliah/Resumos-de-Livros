@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace Capitulo03
 {
-    class Program
+    class FuncoesData
     {
         static void Main(string[] args)
         {
-           /* WriteLine("---MICROSOFT STUDIES COMPANY---");
+            /* WriteLine("---MICROSOFT STUDIES COMPANY---");
             string empresa = " Meu nome é Majúlia! ";
             
             WriteLine("O TRIM retira espaços antes e depois das expressões: ");
@@ -38,7 +38,6 @@ namespace Capitulo03
            }
            
            //Comparação 2
-
            if (nomeUpper.ToLower() == nomeLower)
            {
                 WriteLine("2 - nomes iguais");               
@@ -65,13 +64,11 @@ namespace Capitulo03
            
            WriteLine("Captura apenas o primeiro nome das pessoas: ");
            string[] nomes = {"Fabricio dos Santos","José da Silva","Roberta Brasil"};
-
            foreach (var n in nomes)
            {
                WriteLine($"{n.Remove(n.IndexOf(" "))}");
                WriteLine(" ");
            }
-
            string novaEmpresa = empresa;
            WriteLine("Replace - Troca os parâmetros");
            WriteLine(empresa);
@@ -97,13 +94,12 @@ namespace Capitulo03
           foreach (var fruta in cesta)
           {
               WriteLine($"{fruta.Substring(fruta.IndexOf(" ") + 1)}");
-
               qtde += Convert.ToInt32(fruta.Substring(0, fruta.IndexOf(" ")));
               WriteLine($"Qtde total: {qtde:n0}");
           }
           */
           
-          WriteLine("IsNullOrEmpty verifica se a tring está nula ou vazia.");
+          /* WriteLine("IsNullOrEmpty verifica se a tring está nula ou vazia.");
           string nome = "Majulia";
           string sobrenome = null;
 
@@ -113,13 +109,26 @@ namespace Capitulo03
           {
               WriteLine($"Nome: {nome}");
           }
+          */
           
+         WriteLine("Olahr");
+         int dia = 20;
+         int mes = 11;
+         int ano = 2021;
          
+         DateTime dtAniversario = new DateTime(ano, mes, dia);
+         DateTime dtFesta = new DateTime(2021, 08, 25);
          
+         WriteLine("Fuunções de datas :)");
+         WriteLine($"Aniversário: {dtAniversario}");
+         WriteLine($"Aniversário: {dtAniversario: dd/MM/yyyy}");
+         WriteLine($"Aniversário: {dtAniversario: dddd/MMM/yyyy}");
+         WriteLine($"Aniversário: {dtAniversario: dddd dd/ MMMM/yyyy}");
          
-         
-         
-         
+
+
+
+
         }
     }
 }

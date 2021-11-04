@@ -95,8 +95,6 @@ Figura 3 retirada do livro.
 
 #### Métodos internos nos permitem manipular textos, datas, operações matemáticas e precisamos destas funcionalidades para resolver problemas no dia a dia.
 
-
-
 - ## Funções de texto:
 
   #### Usadas para manipular *strings*. Podemos limpar espaços, obter quantidade de caracteres, transformar tudo para minúscula ou maiúscula, trocar conteúdos e centenas de outras possibilidades. Faremos alguns exemplos, e como estamos usando funcionalidades somente do console, a interação para exibir informações na tela se dá através dos comandos ***Console.WriteLine***("Expressão aqui dentro"); No entando, o código fica muito grande e podemos contornar isso na lista de using e referenciar o namespace deste comando de forma estática e usar apenas o WriteLine("Expressão"). Isso está explícito na primeira linha do programa. Somente pode ser utilizado na MAIN(arquivo principal) E tudo que estiver dentro do namespace citado poderá usar a froma abreviada do console, deste jeito:
@@ -215,17 +213,25 @@ Figura 3 retirada do livro.
   
   
   
+  ![](https://github.com/majuliah/livrosLidos/blob/main/img/print21.png?raw=true)
+
+
+
+- ## FUNÇÕES DATAS:
+
+  #### As funções datas nos permite manipular qualquer informação de uma data, contanto que esteja no modelo DateTime contendo o dia, mês e ano. Conseguimos fazer operações, adicionar, subtrair, dias, meses e anos, aplicar formatação customizada, obter a data e a hora completa do sistema operacional, converter isso pra texto, ler texto e converter em data e muito mais. 
+
+- ## DateTime:
+
+  #### No C#, uma hora, data, minuto, segundo e ticks dependem do datetime. Todos estes são conhecidos, exceto os Ticks que é um tipo Long que permite atribuir um  número para: MILISEGUNDO E ***NANOSEGUNDO***.
+
+  1. 	#### Uma data é composta por um dia (1 a 31), um mês (1 a 12) e um ano (valor inteiro). A entrada será na ordem de Ano, mês e dia, reespectivamente.
+
+  2. #### Precisamos fazer formatação das datas:
+
+  3. 
+
   
-
-
-
-
-
-
-
-
-
-
 
 
 

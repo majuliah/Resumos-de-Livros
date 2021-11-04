@@ -5,4 +5,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Teste1.cs" />
+    <Compile Remove="Teste2.cs" />
+  </ItemGroup>
+
 </Project>
