@@ -79,7 +79,7 @@ namespace Capitulo03
            */
           
           //WriteLine("Split divide a cadeia.");
-          string nivelLivro = "Este livro é o básico de C#";
+          //string nivelLivro = "Este livro é o básico de C#";
           //string[] blocos = nivelLivro.Split(' ');
           //int cont = 1;
 
@@ -89,10 +89,10 @@ namespace Capitulo03
           //}
           //WriteLine($"Qtde de palavras: {blocos.Count()}");
 
-          WriteLine($"O resultado da substring (5, 14) é: {nivelLivro.Substring(5, 14)}");
+          //WriteLine($"O resultado da substring (5, 14) é: {nivelLivro.Substring(5, 14)}");
           
-          WriteLine("Substring é usado para retirar partes de textos");
-          string[] cesta = {"5 Laranjas", "8 Limões", "14 Peras", "18 Melancias"};
+          //WriteLine("Substring é usado para retirar partes de textos");
+          /*string[] cesta = {"5 Laranjas", "8 Limões", "14 Peras", "18 Melancias"};
           int qtde = 0;
           foreach (var fruta in cesta)
           {
@@ -101,11 +101,25 @@ namespace Capitulo03
               qtde += Convert.ToInt32(fruta.Substring(0, fruta.IndexOf(" ")));
               WriteLine($"Qtde total: {qtde:n0}");
           }
+          */
           
-          
-          
+          WriteLine("IsNullOrEmpty verifica se a tring está nula ou vazia.");
+          string nome = "Majulia";
+          string sobrenome = null;
 
-
+          if (!String.IsNullOrEmpty(nome) && !String.IsNullOrEmpty(sobrenome))
+              WriteLine($"Nome: {nome} {sobrenome}");
+          else
+          {
+              WriteLine($"Nome: {nome}");
+          }
+          
+         
+         
+         
+         
+         
+         
         }
     }
 }

@@ -209,6 +209,12 @@ Figura 3 retirada do livro.
 
 - ## ISNULLOREMPTY:
 
+  #### Este método verifica se a string está nula ou vazia. Muito usado com interação com usuários, a fim de garantir que ele insira os dados requeridos. Também usados em casos de manipular um objeto entre as camadas de acesso a dados e interface. 
+  
+  ### No C#, o uso de dois && é para quando temos mais de duas condições a serem avaliadas. Quando a primeira condição não atende ao critério, as outras não chegam nem a ser lidas. Quando temos somente um &, as outras são avaliadas. É como se fosse uma barreira.
+  
+  
+  
   
 
 
