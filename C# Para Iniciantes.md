@@ -229,11 +229,13 @@ Figura 3 retirada do livro.
 
   2. #### Precisamos fazer formatação das datas:
 
-  3. 
+  3. ![](https://github.com/majuliah/livrosLidos/blob/main/img/print22.png?raw=true)
 
   
 
+  
 
+  - ## TODAY
 
 
 
