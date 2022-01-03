@@ -16,5 +16,10 @@
          {
              //inserir o método aqui
          }
+
+         Personagem()
+         {
+             
+         }
     }
 }

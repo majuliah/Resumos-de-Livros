@@ -60,21 +60,13 @@
 
 #### A classe também pode ser definida como a abstração de uma entidade, seja ela física ou abstrata de coisas que existem no mundo real. Classes com nome pobremente dados podem gerar problemas de entendimentos futuros no código. Ela deve ser bem definida e só conter atributos e métodos que lhe dizem respeito.
 
-
-
-
-
-
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print23.png?raw=true)
 
 ##     ATRIBUTO 🐲
 
 #### Informações que são manipuladas dentro das classes. São as características, os valores, informações de uma classe. São as informações que uma determinada classe pode manipular.
 
-
-
-
-
-
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print24.png?raw=true)
 
 ##     MÉTODO 🤹🏽‍♀️
 
@@ -82,13 +74,21 @@
 
 #### Void: É a forma de informarmos que o método não vai retornar nada.
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print25.png?raw=true)
 
 
 
 
 
+#### Podemos, dentro de uma única classe, ter quantos métodos precisarmos ou desejarmos. Os métodos também podem trabalhar em conjunto entre si, sendo chamados um dentro do outro. Mas, além disso, existem dois métodos especiais:
 
-#### oioi 
+
+
+## Dois métodos especiais✨:
+
+#### Como já foi dito, podemos ter quantos métodos precisarmos, mas existem os métodos **construtores** e **destrutores**.
+
+
 
 
 
