@@ -96,7 +96,13 @@
 
 ![](https://github.com/majuliah/livrosLidos/blob/main/img/print26.png?raw=true)
 
+### DESTRUTOR:
 
+#### Ao contrário do construtor, o destrutor desfaz um método construtor. Ele serve para simplesmente eliminar o método ou desfazer cargas de processamento que se tornaram inutilizadas após um período de processamento. A mesma regra de implícito dos construtores também de aplicam aos destrutores. 
+
+
+
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print27.png?raw=true)
 
 
 
