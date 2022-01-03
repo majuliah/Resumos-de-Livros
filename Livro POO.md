@@ -94,7 +94,9 @@
 
 #### Se um construtor pertence a uma determinada classe e a função dele é criar objetos a partir dela, logo seu retorno será objetos do tipo da classe. Por isso não precisamos definir retorno algum. Em C# e JAVA, os construtores são implícitos, assim podemos utilizar eles até mesmo sem declarar.
 
-## 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print26.png?raw=true)
+
+
 
 
 

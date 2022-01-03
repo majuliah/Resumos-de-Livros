@@ -12,6 +12,11 @@
              
          }
 
+         ~Personagem()
+         {
+             
+         }
+
          void Pular()
          {
              //inserir o método aqui
