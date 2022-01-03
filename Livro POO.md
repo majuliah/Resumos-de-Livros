@@ -108,6 +108,22 @@
 
 
 
+## SOBRECARGA DE MÉTODO: 🐇
+
+#### A sobrecarga de método é o fato de precisarmos de diferentes parâmetros para os processamentos. Ou seja, sempre que a quantidade, ordem ou tipo dos parâmetros muda, temos uma sobrecarga de métodos. O exemplo abaixo simula a área de um quadrilátero. Para diferentes tipos, temos diferentes operações:
+
+
+
+#### Atributos e métodos também são chamados de membros. Sempre que se ouvir membros da classe ou membros do objeto, estamos nos referindo a eles.
+
+
+
+####  
+
+
+
+
+
 
 
 
