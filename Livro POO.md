@@ -54,6 +54,30 @@
 
 
 
+##     CLASSE🕵🏽‍♀️
+
+#### É a unidade mínima e inicial da orientação a objetos. É uma estrutura que abstrai um conjunto de objetos com características semelhantes. Ela determina o comportamento do objeto através dos métodos e o estado através dos atributos. A classe define, é a base com tudo o que é necessário para a criação de um objeto. Ela é um molde, que diz como as informações são trabalhadas e manipuladas.
+
+#### A classe também pode ser definida como a abstração de uma entidade, seja ela física ou abstrata de coisas que existem no mundo real. Classes com nome pobremente dados podem gerar problemas de entendimentos futuros no código. Ela deve ser bem definida e só conter atributos e métodos que lhe dizem respeito.
+
+##     ATRIBUTO 🐲
+
+#### Informações que são manipuladas dentro das classes. São as características, os valores, informações de uma classe. São as informações que uma determinada classe pode manipular
+
+##     MÉTODO 🤹🏽‍♀️
+
+#### São as ações que as classes vão executar. Eles exigem um retorno e assim como os atributos, devem ser específicos e bem definidos. Os métodos manipulam os atributos.
+
+#### Void: É a forma de informarmos que o método não vai retornar nada.
+
+#### 
+
+ 
+
+
+
+
+
 
 
 
