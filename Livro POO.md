@@ -118,13 +118,33 @@
 
 # O OBJETO🎃:
 
-### O objeto é a instanciação de uma classe. Isso significa que:
+### O objeto é a instância de uma classe. Isso significa que:
 
 #### A classe é a base, a abstração de um objeto. Criamos as classes para servirem de base para a instanciação de um objeto. (A classe é uma abstração e o Objeto é uma classe instanciada). O objeto é o conceito de uma coisa do mundo real, podendo ser concreta, como um cartão, uma planta, ou abstrata, como uma compra, uma viagem, etc. 
 
-#### Capítulo 5.4 -> página 65
+#### O operador new instancia o objeto e armazena na variável e depois nos referimos ao objeto pelo nome da variável.
+
+#### Na orientação a objetos, quando queremos verificar igualdade, utilizamos o método EQUALS. Não utilizamos os operadores == porque o Equals verifica se os objetos estão apontando para o mesmo local da memória. 
+
+#### Toda vez que um new é executado, um novo lugar na memória é reservado para o objeto. E sendo assim, a == retornaria false. 
+
+#### É comum querermos saber se o objeto é instanciado da mesma classe e por isso os equals são muito eficientes. 
 
 
+
+## A Representação numérica de um Objeto:
+
+#### Em linguagens orientadas a objeto, o hash de um objeto é muito útil. O hash é um número aleatório gerado que representa o estado do objeto, os valores de seus atributos em determinado momento. Esse número é muito importante para pesquisas que utilizam o padrão table hash, ou tabelas de dispersão.  Dessa forma, o equals auxilia no trabalho de pesquisa do hash. Existem diversas formas de obter o hashcode, mas aqui usaremos a mais comum em Orientação a Objetos em C#. O cálculo do hash deve ser em cima dos mesmos atributos que foram passados no Equals. 
+
+#Pausa na página 74
+
+
+
+
+
+
+
+ 
 
 
 
