@@ -150,13 +150,19 @@
 
 ### **Existem os de instância e os estáticos.** 
 
+### ATRIBUTOS:
+
 #### Os atributos de instância, são os atributos que contem no objeto e só podem ser utilizados pelo objeto. Em uma classe pessoa, por exemplo, o atributo nome é um exemplo. Mesmo se houver dois objetos com atributos iguais, eles ainda seriam diferentes instâncias da classe, dois casos isolados um do outro, não tendo relação alguma entre si. Embora definidos na classe, só podem ser utilizados pelo objeto. Só poderão ser utilizados e acessados a partir da instância de uma classe.
 
 #### Já o atributo estático é um elemento da CLASSE e não do objeto. Eles são utilizados somente dentro da classe e não é uma boa prática acessa-los pelo objeto. Dessa forma, os comportamentos deles são totalmente opostos ao de instância. Isso quer dizer que seus valores não alteram, porque eles pertencem à classe antes mesmo de existir um objeto. Com isso, objetos distintos terão o mesmo valor para determinado atributo. Usando ainda o mesmo exemplo da classe Pessoa, seria um atributo NumeroDeOlhos. Independente da pessoa, ela terá dois olhos, então este atributo poderia ser estático. Para definirmos um atributo estático, temos de informar que ele é estático, da seguinte forma:
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print29.png?raw=true)
+
+### MÉTODOS
+
+#### Os métodos de instância são definidos na classe, mas utilizados via objeto. Como métodos não armazenam valores e sim executam operações, mesmo com objetos distintos ele terá o mesmo comportamento. Ele só pode ser requisitado através do objeto. Por default, todo método é de instância, e para criá-los é da mesma forma:
 
 
-####
 
 ####
 
