@@ -168,9 +168,11 @@
 
 #### Já o método estático, é um membro da CLASSE e não do objeto, e não pode ser acessado pelo memso. Ele executa uma ação e ela será a mesma independente do objeto. E assim como no atributo, para definirmos um método estático, é necessário informar:
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print31.png?raw=true)
 
+#### Os métodos estáticos são para casos onde não precisamos criar um objeto para obtermos aquela operação. Exemplos disso são funções matemáticas como a Math. Com elas não precisamos criar um objeto para obter o cálculo de uma raiz quadrada, por exemplo, com o Math.Pow().
 
-
+####  
 
 
 
