@@ -172,7 +172,21 @@
 
 #### Os métodos estáticos são para casos onde não precisamos criar um objeto para obtermos aquela operação. Exemplos disso são funções matemáticas como a Math. Com elas não precisamos criar um objeto para obter o cálculo de uma raiz quadrada, por exemplo, com o Math.Pow().
 
+
+
+# Mensagens:
+
+#### Uma mensagem é a chamada para ativar um método de instância ou estático. Então quando requisitamos a execução de um método, é chamado de mensagem.
+
+#### página 92
+
+#### capítulo 6
+
+#### haha
+
 ####  
+
+ 
 
 
 
