@@ -162,9 +162,13 @@
 
 #### Os métodos de instância são definidos na classe, mas utilizados via objeto. Como métodos não armazenam valores e sim executam operações, mesmo com objetos distintos ele terá o mesmo comportamento. Ele só pode ser requisitado através do objeto. Por default, todo método é de instância, e para criá-los é da mesma forma:
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print30.png?raw=true)
+
+### Independentemente do objeto que será instanciado, o comportamento para todos será o mesmo, que é "falar" Olá.
+
+#### Já o método estático, é um membro da CLASSE e não do objeto, e não pode ser acessado pelo memso. Ele executa uma ação e ela será a mesma independente do objeto. E assim como no atributo, para definirmos um método estático, é necessário informar:
 
 
-####
 
 
 
