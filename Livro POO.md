@@ -1,4 +1,4 @@
-#                   Livro Orientação a Objetos 👩🏽‍🚀
+#                                    Livro Orientação a Objetos 👩🏽‍🚀
 
 ​                       ![](https://media2.giphy.com/media/AQRapWCgC7dThyVEYb/giphy.gif?cid=ecf05e47g71icdsmvdpj9c17vielqtj02m9v3sr8z0qoiikm&rid=giphy.gif&ct=g)
 
@@ -132,13 +132,21 @@
 
 
 
-## A Representação numérica de um Objeto:
+## A Representação numérica de um Objeto*️⃣:
 
 #### Em linguagens orientadas a objeto, o hash de um objeto é muito útil. O hash é um número aleatório gerado que representa o estado do objeto, os valores de seus atributos em determinado momento. Esse número é muito importante para pesquisas que utilizam o padrão table hash, ou tabelas de dispersão.  Dessa forma, o equals auxilia no trabalho de pesquisa do hash. Existem diversas formas de obter o hashcode, mas aqui usaremos a mais comum em Orientação a Objetos em C#. O cálculo do hash deve ser em cima dos mesmos atributos que foram passados no Equals. 
 
-#Pausa na página 74
+#Retornar na página 74 à 78 para entender o hashcode e como calculá-lo
 
 
+
+## A Representação padrão de um Objeto 🆎:
+
+#### É quando selecionamos quais os atributos melhor definem aquele objeto. Não é necessário especificar todos os atributos, mas aqueles mais importantes. Exemplo de uma classe livro, um objeto com a representação padrão seria a exibição do Nome do Livro e o seu Autor. Só por estes atributos é possível identificá-lo. 
+
+
+
+## Os Tipos de Atributos e Métodos🎆:
 
 
 
