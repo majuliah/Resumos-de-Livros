@@ -198,7 +198,27 @@
 
 #### Os fundamentos de reúso, vistos anteriormente, é diretamente ligado à herança e também a abstração. Quanto mais abstrata uma classe é, maior a sua usabilidade e reúso.
 
-### Quando uma classe HERDA da outra, ela pode conter NOVOS membros mas não poderá excluir. Quando usamos a herança, dizemos que  um conceito 
+### Quando uma classe HERDA da outra, ela pode conter NOVOS membros mas não poderá excluir. Quando usamos a herança, dizemos que  um conceito  "é do tipo" de outro conceito. Essa possibilidade fideliza a possibilidade de representar algo do mundo real na qual estamos modelando.  Quanto mais se sobe na hierarquia, mais geral, e quanto mais desce, mais específico. 
+
+### Só devemos utilizar a herança se a resposta da pergunta "Uma coisa é outra" for verdadeira! Exemplo é um hospital. Uma classe pessoa é criada e as demais herdadas dela. Um médico é uma pessoa? Se sim, então ele pode herdar de pessoa.  Se não for, JAMAIS devemos usar herança. Só utilizamos herança quando o modelo em questão nos traz otimização. 
+
+#### Em C# a herança é feita através dos dois pontos (class Medico : Pessoa) e dessa forma podemos ver que Pessoa é a superclasse e Medico é a subclasse. Em alguns momentos, uma subclasse pode ser a superclasse de outra. Basta mudar o ponto de referência que a hierarquia das classes podem mudar.
+
+#### Na herança uma subclasse tem acesso a todos os membros da superclasse? Sim e Não: No momento podemos dizer que sim, mas na hora em que vermos sobre visibilidade, responderemos que não.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
