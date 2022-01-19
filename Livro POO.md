@@ -178,13 +178,41 @@
 
 #### Uma mensagem é a chamada para ativar um método de instância ou estático. Então quando requisitamos a execução de um método, é chamado de mensagem.
 
-#### página 92
 
-#### capítulo 6
 
-#### haha
+# capítulo 6 - Conceitos Relacionais 🦑
 
-####  
+#### Eles são os possibilitadores da criação de classes a partir ou com ajuda de outras classes. Aqui se encaixa os assuntos de **herança**, **associação** e **interface**.
+
+## Herança :🐓🐤
+
+#### É a possibilidade de representar algo que já existe! 
+
+#### Nós herdamos coisas de nossos pais, que herdaram de nossos avós, que herdaram de nossos bisavós e por aí vai!  Na Orientação a Objetos, quando queremos herdar, nós fazemos uma classe herdar de outra classe. 
+
+#### Isso quer dizer que uma subclasse herda atributos e métodos de uma superclasse, e a subclasse pode prover seus próprios membros. Ela é uma extensão, ou subtipo de uma superclasse. 
+
+#### É preciso deixar claro que a herança só funciona entre ***classes***. Objetos só existem em tempo de execução, impossibilitando a sua alteração estrutural, portanto NÃO existe um objeto herdar algo de outro. As classes, como são de tempo de desenvolvimento ou compilação, podem ter estruturas novas e consequentemente objetos a partir delas. 
+
+#### A herança pode ocorrer em quantos níveis forem necessários porém é uma boa prática termos 4 níveis, porque quanto mais níveis, mais complexo será a compreensão. 
+
+#### Os fundamentos de reúso, vistos anteriormente, é diretamente ligado à herança e também a abstração. Quanto mais abstrata uma classe é, maior a sua usabilidade e reúso.
+
+### Quando uma classe HERDA da outra, ela pode conter NOVOS membros mas não poderá excluir. Quando usamos a herança, dizemos que  um conceito 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+#### 
 
  
 
