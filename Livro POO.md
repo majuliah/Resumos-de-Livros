@@ -208,6 +208,26 @@
 
 
 
+## Tipos de Classes
+
+#### Além dos tipos super e subclasse, temos o conceito de abstrata e concreta. 
+
+#### Classe abstrata tem como objetivo principal ser 100% o conceito de abstração. Representam conceitos tão genéricos que não vale a pena trabalhar com eles diretamente, só através de heranças. Estão TÃO incompletos que só devem ser manipulados através de suas subclasses, seus subtipos. Por ter essa característica de serem incompletas, não podem ser instanciadas, não criamos os objetos a partir delas, e ao tentarmos usar o operador new, um erro do compilador informará que a classe não pode ser instanciada. 
+
+#### Elas costumam estar no TOPO da hierarquia, o exemplo do hospital ilustra que a classe Pessoa é uma classe abstrata e só a classe Medico ou Funcionários poderia ser instanciada. Nós inserimos a palavra reservada abstract para implementarmos uma classe abstrata:
+
+
+
+
+
+#### Classe 
+
+
+
+
+
+
+
 
 
 
