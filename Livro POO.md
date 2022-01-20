@@ -216,7 +216,9 @@
 
 #### Elas costumam estar no TOPO da hierarquia, o exemplo do hospital ilustra que a classe Pessoa é uma classe abstrata e só a classe Medico ou Funcionários poderia ser instanciada. Nós inserimos a palavra reservada abstract para implementarmos uma classe abstrata:
 
+![](https://github.com/majuliah/livrosLidos/blob/main/img/print32.png?raw=true)
 
+página 101
 
 
 
