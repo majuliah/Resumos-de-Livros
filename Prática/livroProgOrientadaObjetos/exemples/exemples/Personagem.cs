@@ -7,15 +7,16 @@
          int Idade;
          bool temBigode;
          
-         Personagem()
+         public Personagem()
          {
              
          }
 
-         ~Personagem()
+         /*~Personagem()
          {
              
          }
+         */
 
          void Pular()
          {
