@@ -178,8 +178,6 @@
 
 #### Uma mensagem é a chamada para ativar um método de instância ou estático. Então quando requisitamos a execução de um método, é chamado de mensagem.
 
-
-
 # capítulo 6 - Conceitos Relacionais 🦑
 
 #### Eles são os possibilitadores da criação de classes a partir ou com ajuda de outras classes. Aqui se encaixa os assuntos de **herança**, **associação** e **interface**.
@@ -218,11 +216,39 @@
 
 ![](https://github.com/majuliah/livrosLidos/blob/main/img/print32.png?raw=true)
 
-página 101
+
+
+## MÉTODOS ABSTRATOS:
+
+#### Ele não deve possuir uma implementação, somente a sua assinatura. Um método abstrato só pode ser definido em uma classe abstrata, e CLASSES abstratas não precisam ter somente métodos abstratos, podem ter implementação de métodos normais. Para definirmos métodos abstratos, só adicionamos abstract antes, assim como nas classes. Sua explicação e implementação será  feita quando for explicado polimorfismo. Por padrão, um método não é abstrato e ao final dele, devemos fechá-lo com ; 
+
+#### NÃO existem atributos abstratos, pois isso não faria sentido algum, já que eles servem para prover valores e definir estados do objeto. 
+
+#### É bom procurar, após a leitura do livro, sobre classes anônimas e classes internas, pois são assuntos avançados.
+
+#### Uma classe concreta que herda de uma classe abstrata que possuí métodos abstratos, é OBRIGADA a fazer uso dos métodos. Já se uma classe abstrata herdar de outra abstrata, a obrigatoriedade dos métodos é revogada. 
 
 
 
-#### Classe 
+
+
+## Tipos de Herança:
+
+#### Existem dois tipos, a simples e a múltipla:
+
+#### A simples é quando uma subclasse tem apenas uma superclasse. Isso foi o que vimos no tópico acima, então não há necessidade de adentrar novamente no assunto.
+
+#### Agora a múltipla se dá quando a subclasse necessita de mais de uma superclasse. No C#, por motivos de concordância nomilística, não é possível implementar heranças múltiplas. Já em linguagens como C++ é possível. Há um jeito de contornar a necessidade de heranças múltiplas mas só veremos adiante também.
+
+
+
+página 110
+
+
+
+ 
+
+
 
 
 
