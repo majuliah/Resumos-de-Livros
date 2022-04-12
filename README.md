@@ -1,6 +1,6 @@
 # Repositório dedicado à anotações de livros lidos🔱
 
- Você pode encontrar os links para os livros dentro dos próprios arquivos :)
+ Você pode encontrar os links para os livros dentro dos próprios arquivos (:
 
 
 #### O progresso desde repositório está em andamento...🚧
