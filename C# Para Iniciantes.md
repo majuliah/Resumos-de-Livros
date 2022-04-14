@@ -6,11 +6,11 @@
 
 ## Capítulo 1 (introdução)📔:
 
-#### Softwares são o resultado de uma compilação de computador. São programas de, celulares, computadores e outras plataformas que nos ajudam a automatizar tarefas repetitivas no dia a dia e garantir confiabilidade ao executa-las.  A demanda por profissionais que produzam softwares cresceu bastante nos últimos anos e o mercado expandiu, já que toda empresa atual necessita ao menos de um software para auxiliar nos negócios. 
+#### Softwares são o resultado de uma compilação de computador. São programas de celulares, computadores e outras plataformas que nos ajudam a automatizar tarefas repetitivas no dia a dia e garantir confiabilidade ao executa-las.  A demanda por profissionais que produzam softwares cresceu bastante nos últimos anos e o mercado expandiu, já que toda empresa atual necessita ao menos de um software para auxiliar nos negócios. 
 
 #### O primeiro passo para se iniciar em uma carreira de desenvolvimento é a escolha da plataforma e da linguagem. Tendo isso em mãos, podemos seguir para o próximo passo. 
 
-#### O C# é uma linguagem de programação moderna, robusta, tipada e Orientada a Objetos. Com ela é possível criar aplicativos de computadores e celulares, sites para a web e jogos para diversas plataformas. Ele tem raízes na linguagem C, C++ e foi criada pela Microsoft com o objetivo de desenvolver sistemas para Windows e ao longo do tempo foi evoluindo e hoje é suportada e utilizada para plataformas como Linux e Mac. Além disso todo o ecossistema é open-source.  Com o C# podemos criar softwares em sistemas nuvem, websites, aplicações web, portais e muitos outros.
+#### O C# é uma linguagem de programação moderna, robusta, tipada e Orientada a Objetos. Com ela é possível criar aplicativos de computadores e celulares, sites para a web, suporte para aplicativos em nuvem, inteligência artificial, sistemas embarcados, jogos e muito mais. Ele tem raízes na linguagem C, C++ e foi criada pela Microsoft com o objetivo de desenvolver sistemas para Windows e ao longo do tempo foi evoluindo e hoje é suportada e utilizada para plataformas como Linux e Mac. Além disso todo o ecossistema é open-source.
 
 #### Para realizar os exemplos deste livro, eu usarei a IDE [Raider](https://www.jetbrains.com/pt-br/rider/) da JetBrains.
 
