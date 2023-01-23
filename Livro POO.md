@@ -150,7 +150,7 @@
 
 ### **Existem os de instância e os estáticos.** 
 
-### ATRIBUTOS:
+### ATRIBUTOS🦵:
 
 #### Os atributos de instância, são os atributos que contem no objeto e só podem ser utilizados pelo objeto. Em uma classe pessoa, por exemplo, o atributo nome é um exemplo. Mesmo se houver dois objetos com atributos iguais, eles ainda seriam diferentes instâncias da classe, dois casos isolados um do outro, não tendo relação alguma entre si. Embora definidos na classe, só podem ser utilizados pelo objeto. Só poderão ser utilizados e acessados a partir da instância de uma classe.
 
@@ -158,7 +158,7 @@
 
 ![](https://github.com/majuliah/livrosLidos/blob/main/img/print29.png?raw=true)
 
-### MÉTODOS
+### MÉTODOS🏃‍♀️
 
 #### Os métodos de instância são definidos na classe, mas utilizados via objeto. Como métodos não armazenam valores e sim executam operações, mesmo com objetos distintos ele terá o mesmo comportamento. Ele só pode ser requisitado através do objeto. Por default, todo método é de instância, e para criá-los é da mesma forma:
 
@@ -242,9 +242,7 @@
 
 
 
-página 110
-
-
+! Continuar da página 110 ! 
 
  
 
