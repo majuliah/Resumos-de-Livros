@@ -23,8 +23,5 @@ namespace exemples
         {
             
         }
-        
-        
-        
     }
 }

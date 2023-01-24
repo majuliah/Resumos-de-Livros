@@ -222,13 +222,11 @@
 
 #### É bom procurar, após a leitura do livro, sobre classes anônimas e classes internas, pois são assuntos avançados.
 
-#### Uma classe concreta que herda de uma classe abstrata que possuí métodos abstratos, é OBRIGADA a fazer uso dos métodos. Já se uma classe abstrata herdar de outra abstrata, a obrigatoriedade dos métodos é revogada. 
+#### **Uma classe concreta que herda de uma classe abstrata** e possuí métodos abstratos é **OBRIGADA** a fazer uso destes métodos. Isso de dá pelo fato de que por as classes abstratas serem de uso direto, se espera que os métodos sejam usados e para tornar isto possível e os comportamentos devem ser especificados. Já se uma classe abstrata herda de outra classe abstrata, os métodos não possuem a obrigatoriedade de utilização.
 
 
 
-
-
-## Tipos de Herança: 🐺🐶
+## Tipos de Herança🐺🐶:
 
 #### Existem dois tipos, a simples e a múltipla:
 
@@ -238,7 +236,15 @@
 
 
 
-! Continuar da página 110 ! 
+## UP e Downcast 🛫🛬: 
+
+#### Upcast é uma conversão onde a subclasse é promovida a superclasse, e como a classe filha é do tipo de sua mãe, é um tipo de conversão permitido. A seguir um exemplo: 
+
+
+
+
+
+
 
  
 
