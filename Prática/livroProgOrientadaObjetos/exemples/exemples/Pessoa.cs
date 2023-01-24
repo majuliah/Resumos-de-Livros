@@ -17,9 +17,20 @@ namespace exemples
     }
     public class Medico : Funcionario
     {
-        DateFormat CRM;
+        string CRM;
 
         void Operar()
+        {
+            
+        }
+    }
+    
+    public class Gerente : Funcionario
+    {
+        DateFormat CRM;
+        private string nomedasala;
+
+        void Gerir()
         {
             
         }

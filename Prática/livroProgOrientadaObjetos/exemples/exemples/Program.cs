@@ -10,7 +10,7 @@ namespace exemples
             Personagem nathanDrake = new Personagem();
             
             
-            //up&down cast
+            //upcast
             Pessoa pessoa;
             pessoa = new Medico();
             pessoa = new Paciente();
@@ -18,6 +18,13 @@ namespace exemples
             Funcionario funcionario = new Medico();
             WriteLine(pessoa);
 
+            //downcast
+            Funcionario funcionario1 = new Gerente();
+            Gerente gerente1 = funcionario1 as Gerente;
+            Funcionario funcionario2 = new Funcionario();
+            Gerente gerente2 = funcionario as  Gerente;
+
+            
         }
     }
 }

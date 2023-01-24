@@ -238,11 +238,15 @@
 
 ## UP e Downcast 🛫🛬: 
 
-#### Upcast é uma conversão onde a subclasse é promovida a superclasse, e como a classe filha é do tipo de sua mãe, é um tipo de conversão permitido. A seguir um exemplo: 
+#### Upcast🛫  é uma conversão onde a subclasse é promovida a superclasse, e como a classe filha é do tipo de sua mãe, é um tipo de conversão permitido. A seguir um exemplo: 
 
+![img36](https://github.com/majuliah/livrosLidos/blob/main/img/print36.png?raw=true)
 
+#### Com o código acima conseguimos notar que o upcast é implícito. Automaticamente as subclasses tornam superclasses e não precisamos de outras ações para realizar a operação. 
 
+#### Quando falamos de casts em tipos primitivos de dados, realizamos operações como o cast de um int para um float que é feita de maneira simples. Isso ocorre porque um int cabe dentro de um float e assim é feito com objetos também. Se uma subclasse é subtipo de sua classe mãe, então ela cabe. Dessa forma é possível fazer upcast de maneira implícita com objetos. 
 
+####   O Downcast🛬 é o inverso do up, sendo assim, a superclasse é convertida em subclasse e embora seja permitido, é desencorajado este tipo de operação pois podem ocorrer especializações distintas através de uma generalização. Se voltarmos no conceito do hospital, todo médico e gerente é um funcionário, mas nem todo funcionário é médico ou gerente,m por exemplo. Existem diversos tipos de funcionários e cada um precisa de sua classe referência. A seguir os códigos que ilustram: 
 
 
 
