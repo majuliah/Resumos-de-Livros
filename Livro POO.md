@@ -12,9 +12,9 @@
 
 - #### O principal pioneiro para a Orientação a Objetos foi o conceito de *Simulação*;
 
-- #### Em POO, simulação quer dizer simular eventos que ocorrem no dia a dia dentro da computação;
+- #### Em POO, simulação quer dizer *simular eventos que ocorrem no dia a dia* dentro da computação;
 
-- #### Keith Tocher, em 1967 finaliza o conceito de simulação e através de modelos matemáticos, descreve como os computadores entendem a lógica de simulação dos eventos diários;
+- #### Keith Tocher, em 1967 finaliza o conceito de simulação e através de modelos matemáticos descreve como os computadores entendem a lógica de simulação dos eventos diários;
 
 -  #### A simulação discreta usa eventos lógicos e matemáticos para representar mudanças do estado através do tempo. A POO se deriva dela porque se preocupa com a mudança de estado, alterações de informações ao longo do processamento. Aprecia a troca de informações para gerar informações.
 
@@ -82,8 +82,6 @@
 
 #### Podemos, dentro de uma única classe, ter quantos métodos precisarmos ou desejarmos. Os métodos também podem trabalhar em conjunto entre si, sendo chamados um dentro do outro. Mas, além disso, existem dois métodos especiais:
 
-
-
 ## Dois métodos especiais✨:
 
 #### Como já foi dito, podemos ter quantos métodos precisarmos, mas existem os métodos **construtores** e **destrutores**.
@@ -120,11 +118,11 @@
 
 ### O objeto é a instância de uma classe. Isso significa que:
 
-#### A classe é a base, a abstração de um objeto. Criamos as classes para servirem de base para a instanciação de um objeto. (A classe é uma abstração e o Objeto é uma classe instanciada). O objeto é o conceito de uma coisa do mundo real, podendo ser concreta, como um cartão, uma planta, ou abstrata, como uma compra, uma viagem, etc. 
+#### A classe é a base, a abstração de um objeto. Criamos as classes para servirem de base para a instanciação de um objeto. (A classe é uma abstração e o Objeto é uma classe instanciada). O objeto é o conceito de uma coisa do mundo real, podendo ser concreta, como um cartão, uma planta, ou abstrata, como uma compra, uma viagem etc. 
 
-#### O operador new instancia o objeto e armazena na variável e depois nos referimos ao objeto pelo nome da variável.
+#### O operador **new** instancia o objeto e armazena na variável e depois nos referimos ao objeto pelo nome da variável.
 
-#### Na orientação a objetos, quando queremos verificar igualdade, utilizamos o método EQUALS. Não utilizamos os operadores == porque o Equals verifica se os objetos estão apontando para o mesmo local da memória. 
+#### Na orientação a objetos, quando queremos verificar igualdade, utilizamos o método EQUALS. Não utilizamos os operadores == porque o **Equals** verifica se os objetos estão apontando para o mesmo local da memória. 
 
 #### Toda vez que um new é executado, um novo lugar na memória é reservado para o objeto. E sendo assim, a == retornaria false. 
 
@@ -134,9 +132,9 @@
 
 ## A Representação numérica de um Objeto*️⃣:
 
-#### Em linguagens orientadas a objeto, o hash de um objeto é muito útil. O hash é um número aleatório gerado que representa o estado do objeto, os valores de seus atributos em determinado momento. Esse número é muito importante para pesquisas que utilizam o padrão table hash, ou tabelas de dispersão.  Dessa forma, o equals auxilia no trabalho de pesquisa do hash. Existem diversas formas de obter o hashcode, mas aqui usaremos a mais comum em Orientação a Objetos em C#. O cálculo do hash deve ser em cima dos mesmos atributos que foram passados no Equals. 
+#### *Em linguagens orientadas a objeto, o hash de um objeto é muito útil. O hash é um número aleatório gerado que representa o estado do objeto, os valores de seus atributos em determinado momento. Esse número é muito importante para pesquisas que utilizam o padrão table hash, ou tabelas de dispersão.  Dessa forma, o equals auxilia no trabalho de pesquisa do hash. Existem diversas formas de obter o hashcode, mas aqui usaremos a mais comum em Orientação a Objetos em C#. O cálculo do hash deve ser em cima dos mesmos atributos que foram passados no Equals.* 
 
-#Retornar na página 74 à 78 para entender o hashcode e como calculá-lo
+###### Retornar na página 74 à 78 para entender o hashcode e como calculá-lo
 
 
 
@@ -158,7 +156,7 @@
 
 ![](https://github.com/majuliah/livrosLidos/blob/main/img/print29.png?raw=true)
 
-### MÉTODOS🏃‍♀️
+### MÉTODOS🏃‍♀️:
 
 #### Os métodos de instância são definidos na classe, mas utilizados via objeto. Como métodos não armazenam valores e sim executam operações, mesmo com objetos distintos ele terá o mesmo comportamento. Ele só pode ser requisitado através do objeto. Por default, todo método é de instância, e para criá-los é da mesma forma:
 
@@ -172,8 +170,6 @@
 
 #### Os métodos estáticos são para casos onde não precisamos criar um objeto para obtermos aquela operação. Exemplos disso são funções matemáticas como a Math. Com elas não precisamos criar um objeto para obter o cálculo de uma raiz quadrada, por exemplo, com o Math.Pow().
 
-
-
 # Mensagens:
 
 #### Uma mensagem é a chamada para ativar um método de instância ou estático. Então quando requisitamos a execução de um método, é chamado de mensagem.
@@ -182,23 +178,23 @@
 
 #### Eles são os possibilitadores da criação de classes a partir ou com ajuda de outras classes. Aqui se encaixa os assuntos de **herança**, **associação** e **interface**.
 
-## Herança :🐓🐤
+## Herança :🐓🐤🥚
 
 #### É a possibilidade de representar algo que já existe! 
 
-#### Nós herdamos coisas de nossos pais, que herdaram de nossos avós, que herdaram de nossos bisavós e por aí vai!  Na Orientação a Objetos, quando queremos herdar, nós fazemos uma classe herdar de outra classe. 
+#### Nós herdamos coisas de nossos pais, que herdaram de nossos avós, que herdaram de nossos bisavós e por aí vai. Na Orientação a Objetos, quando queremos herdar, nós fazemos uma classe herdar de outra classe. 
 
 #### Isso quer dizer que uma subclasse herda atributos e métodos de uma superclasse, e a subclasse pode prover seus próprios membros. Ela é uma extensão, ou subtipo de uma superclasse. 
 
-#### É preciso deixar claro que a herança só funciona entre ***classes***. Objetos só existem em tempo de execução, impossibilitando a sua alteração estrutural, portanto NÃO existe um objeto herdar algo de outro. As classes, como são de tempo de desenvolvimento ou compilação, podem ter estruturas novas e consequentemente objetos a partir delas. 
+#### É preciso deixar claro que a herança só funciona entre ***classes***. Objetos só existem em tempo de execução, impossibilitando a sua alteração estrutural, portanto **NÃO** existe um objeto herdar algo de outro. As classes, como são de tempo de desenvolvimento ou compilação, podem ter estruturas novas e consequentemente objetos a partir delas. 
 
 #### A herança pode ocorrer em quantos níveis forem necessários porém é uma boa prática termos 4 níveis, porque quanto mais níveis, mais complexo será a compreensão. 
 
 #### Os fundamentos de reúso, vistos anteriormente, é diretamente ligado à herança e também a abstração. Quanto mais abstrata uma classe é, maior a sua usabilidade e reúso.
 
-### Quando uma classe HERDA da outra, ela pode conter NOVOS membros mas não poderá excluir. Quando usamos a herança, dizemos que  um conceito  "é do tipo" de outro conceito. Essa possibilidade fideliza a possibilidade de representar algo do mundo real na qual estamos modelando.  Quanto mais se sobe na hierarquia, mais geral, e quanto mais desce, mais específico. 
+### Quando uma classe HERDA da outra, ela pode conter NOVOS membros mas não poderá excluir. Quando usamos a herança, dizemos que  um conceito  "é do tipo" de outro conceito. Isso fideliza a possibilidade de representar algo do mundo real na qual estamos modelando.  Quanto mais se sobe na hierarquia, mais geral, e quanto mais desce, mais específico. 
 
-### Só devemos utilizar a herança se a resposta da pergunta "Uma coisa é outra" for verdadeira! Exemplo é um hospital. Uma classe pessoa é criada e as demais herdadas dela. Um médico é uma pessoa? Se sim, então ele pode herdar de pessoa.  Se não for, JAMAIS devemos usar herança. Só utilizamos herança quando o modelo em questão nos traz otimização. 
+### Só devemos utilizar a herança se a resposta da pergunta "Uma coisa é outra" for verdadeira e um exemplo é um hospital. Uma classe pessoa é criada e as demais herdadas dela. Um médico é uma pessoa? Se sim, então ele pode herdar de pessoa.  Se não for, JAMAIS devemos usar herança. Só utilizamos herança quando o modelo em questão nos traz otimização. 
 
 #### Em C# a herança é feita através dos dois pontos (class Medico : Pessoa) e dessa forma podemos ver que Pessoa é a superclasse e Medico é a subclasse. Em alguns momentos, uma subclasse pode ser a superclasse de outra. Basta mudar o ponto de referência que a hierarquia das classes podem mudar.
 
@@ -206,7 +202,7 @@
 
 
 
-## Tipos de Classes
+## Tipos de Classes 🎍:
 
 #### Além dos tipos super e subclasse, temos o conceito de abstrata e concreta. 
 
@@ -218,9 +214,9 @@
 
 
 
-## MÉTODOS ABSTRATOS:
+## MÉTODOS ABSTRATOS ☘️:
 
-#### Ele não deve possuir uma implementação, somente a sua assinatura. Um método abstrato só pode ser definido em uma classe abstrata, e CLASSES abstratas não precisam ter somente métodos abstratos, podem ter implementação de métodos normais. Para definirmos métodos abstratos, só adicionamos abstract antes, assim como nas classes. Sua explicação e implementação será  feita quando for explicado polimorfismo. Por padrão, um método não é abstrato e ao final dele, devemos fechá-lo com ; 
+#### Ele não deve possuir uma implementação, somente a sua assinatura. Um método abstrato só pode ser definido em uma classe abstrata, e **CLASSES abstratas** não precisam ter somente métodos abstratos, podem ter implementação de métodos normais. Para definirmos métodos abstratos, só adicionamos abstract antes, assim como nas classes. Sua explicação e implementação será  feita quando for explicado polimorfismo. Por padrão, um método não é abstrato e ao final dele, devemos fechá-lo com ; 
 
 #### NÃO existem atributos abstratos, pois isso não faria sentido algum, já que eles servem para prover valores e definir estados do objeto. 
 
@@ -232,7 +228,7 @@
 
 
 
-## Tipos de Herança:
+## Tipos de Herança: 🐺🐶
 
 #### Existem dois tipos, a simples e a múltipla:
 
