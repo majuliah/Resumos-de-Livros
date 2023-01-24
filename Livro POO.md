@@ -248,9 +248,15 @@
 
 ####   O Downcast🛬 é o inverso do up, sendo assim, a superclasse é convertida em subclasse e embora seja permitido, é desencorajado este tipo de operação pois podem ocorrer especializações distintas através de uma generalização. Se voltarmos no conceito do hospital, todo médico e gerente é um funcionário, mas nem todo funcionário é médico ou gerente,m por exemplo. Existem diversos tipos de funcionários e cada um precisa de sua classe referência. A seguir os códigos que ilustram: 
 
+![print37](https://github.com/majuliah/livrosLidos/blob/main/img/print37.png?raw=true)
 
+ #### Aqui o downcast funciona porque a variável funcionario1 armazena um objeto Gerente, embora seu tipo seja Funcionario. É válido porque Gerente herda de funcionario, e na primeira linha foi feita um upcast e na segunda linha um downcast. Na quarta linha é possível encontrar um erro que se dá por a terceira linha ter a variável funcionario2 que armazenam o objeto funcionario e, como dito anteriormente, nem todo funcionario é um gerente.
+
+![img38](https://github.com/majuliah/livrosLidos/blob/main/img/print38.png?raw=true)
 
  
+
+###### página 112 -> polimorfismo
 
 
 
