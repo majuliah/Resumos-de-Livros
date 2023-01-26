@@ -1,4 +1,4 @@
-#                                    Livro Orientação a Objetos 👩🏽‍🚀
+#                                    Livro Orientação a Objetos 👩🏽‍🚀🪐
 
 ​                       ![](https://media2.giphy.com/media/AQRapWCgC7dThyVEYb/giphy.gif?cid=ecf05e47g71icdsmvdpj9c17vielqtj02m9v3sr8z0qoiikm&rid=giphy.gif&ct=g)
 
@@ -256,7 +256,11 @@
 
  
 
-###### página 112 -> polimorfismo
+## Polimorfismo💀☠️👻:
+
+#### A exemplificação de polimorfismo é a necessidade e capacidade de alterar o comportamento de uma classe para que a mesma se adeque ao que está proposto a ser feito.  Em determinado momento em meio a hierarquia de classes, um mesmo método precisará se comportar de maneira diferente dependendo do objeto instanciado, que se dá pela flexibilidade que a hierarquia de classes deseja fornecer.  A vantagem do polimorfismo é utilizar objetos diferentes e ainda executar a mesma ação polimórfica.  
+
+
 
 
 
