@@ -258,7 +258,45 @@
 
 ## Polimorfismo💀☠️👻:
 
-#### A exemplificação de polimorfismo é a necessidade e capacidade de alterar o comportamento de uma classe para que a mesma se adeque ao que está proposto a ser feito.  Em determinado momento em meio a hierarquia de classes, um mesmo método precisará se comportar de maneira diferente dependendo do objeto instanciado, que se dá pela flexibilidade que a hierarquia de classes deseja fornecer.  A vantagem do polimorfismo é utilizar objetos diferentes e ainda executar a mesma ação polimórfica.  
+#### A exemplificação de polimorfismo é a necessidade e capacidade de alterar o comportamento de uma classe para que a mesma se adeque ao que está proposto a ser feito.  
+
+#### Em determinado momento em meio a hierarquia de classes, um mesmo método precisará se comportar de maneira diferente dependendo do objeto instanciado, que se dá pela flexibilidade que a hierarquia de classes deseja fornecer.  A vantagem do polimorfismo é utilizar objetos diferentes e ainda executar a mesma ação polimórfica.  
+
+#### O polimorfismo é utilizado de melhor forma quando aplicado para alterar métodos abstratos, que como visto anteriormente, é obrigatório a sua utilização na herança. Dessa forma podemos somente criar assinaturas dos métodos e personalizar as sequências de códigos dentro de subclasses. A seguir um exemplo:
+
+```c#
+class Anestesista : Medico
+{
+    override void Operar()
+    {
+    //passos seguidos por um anestesista    
+    }
+}
+
+class Obstetra : Medico
+{
+    override void Operar()
+    {
+        //passos executados por um obstetra
+    }
+}
+
+class Pediatra : Medico
+{
+    override void Operar()
+    {
+        //passos seguidos por um pediatra
+    }
+}
+```
+
+#### Acima podemos perceber que o uso do polimorfismo só necessita de um método abstrato da superclasse. A relação entre polimorfismo e herança se dá porque, para existir polimorfismo é necessário que tenha herança, algo herdado para ser alterado, personalizado. 
+
+#### Somente através do polimorfismo que conseguimos prover comportamentos para os métodos criados, partindo da necessidade que a subclasse tenha de moldar um método que seja mais coerente. Só é recomendado o uso do polimorfismo se necessário. 
+
+#### A sobescrita se dá quando algo é reescrito. Também é utilizada quando é necessário alterar um comportamento herdado e dessa forma o método é redefinido. Dessa forma os métodos da superclasse são substituídos pelos métodos da subclasse.   
+
+
 
 
 
