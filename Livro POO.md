@@ -296,9 +296,15 @@ class Pediatra : Medico
 
 #### A sobescrita se dá quando algo é reescrito. Também é utilizada quando é necessário alterar um comportamento herdado e dessa forma o método é redefinido. Dessa forma os métodos da superclasse são substituídos pelos métodos da subclasse.   
 
+### 																		
 
+```tex
+								POLIMORFISMO vs. SOBRESCRITA
+```
 
+Do ponto de vista da implementação, o polimorfismo e sobrescrita são a mesma coisa. Mas conceitualmente são diferentes. Uma sobrescrita reescreve algo existente que no caso é o método padrão da superclasse que podemos alterar de acordo com a necessidade. No polimorfismo não há necessidade de haver um comportamento padrão porque geralmente o método que sofrerá polimorfismo é abstrato, que visto anteriormente, necessita ser instanciado. 
 
+Desta forma, uma sobrescrita é um polimorfismo porque estamos propondo algo novo de acordo com a subclasse, mas o contrário é falso, um polimorfismo não é necessariamente uma sobrescrita porque se estamos trabalhando com método abstrato, não há necessidade de redefinição.  
 
 
 
