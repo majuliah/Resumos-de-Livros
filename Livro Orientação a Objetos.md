@@ -388,13 +388,86 @@ class Sala
 
 
 
+## Interfaces🎰:
+
+#### Em algumas aplicações orientadas a objetos que necessitam de modelagens elaboradas, eventualmente será preciso determinar conjuntos de métodos que devem ser utilizados obrigatoriamente. Como os métodos serão utilizados obrigatoriamente, não importa quem os definiu. Tal obrigatoriedade de utilização se chama interface.
+
+#### Quando uma classe implementa uma interface, ela se compromete a realizar todos os comportamentos que a interface disponibiliza. Um exemplo de interface é a prestação de contas de um hospital ao ministério da saúde. Existe um padrão de informações que devem ser enviadas e ambos sabem disso, e a troca de informação entre hospital e ministério se dá através de uma interface. O ministério disponibiliza um conjunto de métodos, obrigatoriedades ao hospital que fornece as informações. Quando outro hospital for enviar as informações, utilizará a mesma interface, e como os métodos foram definidos para obter as informações é irrelevante ao ministério, somente as informações finais são essenciais.  
+
+```c#
+interface IDemonstrativoOperacional
+{
+    double DisponibilizarFaturamentoMensal();
+    Procedimento[] InformarProcedimentoExecutados();
+}
+```
+
+```c#
+class TransmissaoDeDadosMinisterio : IDemonstrativoOperacional
+{
+    public double DisponibilizarFaturamentoMensal()
+    {
+        //implementação específica para o hospital poder informar o 		   faturamento mensal
+    }
+    
+    public Procedimento[] InformarProcedimentoExecutados()
+    {
+       //implementação específica para o hospital poder informar os 		   procedimentos executados
+    }
+}
+```
+
+#### A palavra reservada para criar uma interface é *interface* e para utilizar, é o mesmo procedimento que uma herança, através dos dois pontos : .
+
+#### Anteriormente vimos que quando a classe implementa a interface, necessitam realizar a implementação do método. Na interface, esses métodos não estavam implementados e quando implementados na classe, o corpo é enfim definido. 
+
+#### Um método de uma interface é abstrato, termo discutido na sessão de polimorfismo. Ele não necessita da palavra reservada abstract e sua ideia é fornecer o contrato de implementação sem se preocupar com a implementação em si.
+
+#### Além disso, uma interface se comporta como uma classe abstrata, porém mais restritiva, pois foi visto que em classes abstratas não é necessário o uso de métodos abstratos.
+
+#### Caso necessário, é possível definir atributos nas interfaces, porém eles sempre serão públicos, estáticos e constantes. Estático é definido no corpo, constante significa que o valor não se altera e o valor inicial deve ser definido no momento de sua criação. Em c# um atributo constante possui a palavra reservada readonly.
+
+```c#
+double readonly numeroAleatório = 2;
+```
 
 
 
+#### Na parte dos conceitos de herança, foi especificado que em c# não é possível herdar de mais de uma classe, ou seja, herança múltipla. Quanto as interfaces, é suportado a implementação de quantas forem necessário.
+
+```c#
+interface IUm
+{
+    //coisas da interface IUm
+}
+
+interface IDois
+{
+    //coisas da interface IDois
+}
+```
 
 
 
+```c#
+class Classe1 : Ium, IDois
+{
+    //implementação da classe
+}
+```
 
+
+
+#### Assim, podemos mesclar herança de classe com interfaces. Com interfaces podemos definir subtipos e tipos e a diferença é que na herança utilizamos métodos já pré-definidos e na interface temos a limitação de possuir somente a assinatura dos métodos. 
+
+####  
+
+```c#
+class Classe1 : CLasse0, IUm, IDois 
+{
+ //implementação da classe que emula herança múltipla com interfaces
+}
+```
 
 
 
