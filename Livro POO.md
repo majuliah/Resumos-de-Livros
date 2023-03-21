@@ -22,7 +22,7 @@
 
 - #### SmallTalk-71 é criada com o propósito de unificar a orientação a objetos para ser compilada em diferentes sistemas, já que as linguagens já existentes eram para uso do próprio sistema em que foram criadas;
 
-### 🦩O Paradigma de Programação Estruturada defende que é possível através de 3 estruturas básicas, representar todo e qualquer processo do mundo real. São eles:
+### 🦩O Paradigma de Programação Estruturada defende que é possível através de 3 estruturas básicas representar todo e qualquer processo do mundo real. São eles:
 
 1. #### *Sequência:* O programa é uma sequência finita de passos. Deve ser executado linearmente, um comando após o outro. Todos os passos devem ser feitos para programar o algoritmo desejado. 
 
@@ -126,7 +126,7 @@
 
 #### Toda vez que um new é executado, um novo lugar na memória é reservado para o objeto. E sendo assim, a == retornaria false. 
 
-#### É comum querermos saber se o objeto é instanciado da mesma classe e por isso os equals são muito eficientes. 
+#### É comum querermos saber se o objeto é instanciado da mesma classe e por isso os *equals* são muito eficientes. 
 
 
 
@@ -246,7 +246,7 @@
 
 #### Quando falamos de casts em tipos primitivos de dados, realizamos operações como o cast de um int para um float que é feita de maneira simples. Isso ocorre porque um int cabe dentro de um float e assim é feito com objetos também. Se uma subclasse é subtipo de sua classe mãe, então ela cabe. Dessa forma é possível fazer upcast de maneira implícita com objetos. 
 
-####   O Downcast🛬 é o inverso do up, sendo assim, a superclasse é convertida em subclasse e embora seja permitido, é desencorajado este tipo de operação pois podem ocorrer especializações distintas através de uma generalização. Se voltarmos no conceito do hospital, todo médico e gerente é um funcionário, mas nem todo funcionário é médico ou gerente,m por exemplo. Existem diversos tipos de funcionários e cada um precisa de sua classe referência. A seguir os códigos que ilustram: 
+####   O Downcast🛬 é o inverso do up, sendo assim, a superclasse é convertida em subclasse e embora seja permitido, é desencorajado este tipo de operação pois podem ocorrer especializações distintas através de uma generalização. Se voltarmos no conceito do hospital, todo médico e gerente é um funcionário, mas nem todo funcionário é médico ou gerente por exemplo. Existem diversos tipos de funcionários e cada um precisa de sua classe referência. A seguir os códigos que ilustram: 
 
 ![print37](https://github.com/majuliah/livrosLidos/blob/main/img/print37.png?raw=true)
 
@@ -299,14 +299,64 @@ class Pediatra : Medico
 ### 																		
 
 ```tex
-								POLIMORFISMO vs. SOBRESCRITA
+							  POLIMORFISMO vs. SOBRESCRITA
 ```
 
-Do ponto de vista da implementação, o polimorfismo e sobrescrita são a mesma coisa. Mas conceitualmente são diferentes. Uma sobrescrita reescreve algo existente que no caso é o método padrão da superclasse que podemos alterar de acordo com a necessidade. No polimorfismo não há necessidade de haver um comportamento padrão porque geralmente o método que sofrerá polimorfismo é abstrato, que visto anteriormente, necessita ser instanciado. 
+#### Do ponto de vista da implementação, o polimorfismo e sobrescrita são a mesma coisa. Mas conceitualmente são diferentes. Uma sobrescrita reescreve algo existente que no caso é o método padrão da superclasse que podemos alterar de acordo com a necessidade. No polimorfismo não há necessidade de haver um comportamento padrão porque geralmente o método que sofrerá polimorfismo é abstrato, que visto anteriormente, necessita ser instanciado. 
 
-Desta forma, uma sobrescrita é um polimorfismo porque estamos propondo algo novo de acordo com a subclasse, mas o contrário é falso, um polimorfismo não é necessariamente uma sobrescrita porque se estamos trabalhando com método abstrato, não há necessidade de redefinição.  
+#### Desta forma, uma sobrescrita é um polimorfismo porque estamos propondo algo novo de acordo com a subclasse, mas o contrário é falso, um polimorfismo não é necessariamente uma sobrescrita porque se estamos trabalhando com método abstrato, não há necessidade de redefinição.  
 
 
+
+## Associação🦕🦎:
+
+#### A associação ocorre quando uma herança não é a melhor opção para o problema apresentado, pois ela serve apenas para o reúso. Como nos exemplos anteriores, um anestesista herda da classe médico porque anestesista é um médico. Se precisarmos inserir endereço a estas classes, fazer uma subclasse herdar da classe endereço não é a solução para o problema.  Como um anestesista não é um endereço e um anestesista necessita de um endereço, a associação surge como a solução. As classes e objetos podem se associar com outras classes e objetos quantas vezes forem necessárias. A associação permite que o objeto cumpra o papel de coesão. 
+
+## Tipos de associação: agregação, composição e dependência🦎🪢:
+
+### Associações podem ser realizadas de forma estrutural e comportamental. 
+
+ ### Associação estrutural pode ter dois tipos: agregação e composição 
+
+#### Associação estrutural de Agregação: Na associação estrutural, as associações ocorrem na estrutura da classe, ou seja, nos atributos. Assim um atributo de uma classe é do tipo de outra classe, então todos os atributos e métodos de uma classe estão dentro de um único atributo da classe associada. Na classe médico podemos ter um atributo endereço que é do tipo da classe Endereço. Assim o atributo da classe médico terá acesso a todos os membros da classe Endereço. 
+
+```c#
+abstract class Medico : Funcionario
+{
+    Date CRM;
+    //aqui está a associação 
+    Endereco endereco;
+    
+    void Operar()
+    {
+        //ações necessárias a uma operação
+    }
+}
+```
+
+
+
+#### A associação estrutural do tipo composição ocorre quando há um relacionamento do tipo parte todo, isso significa que a associação só pode existir se houver um objeto. Um endereço não pode existir sem um médico, e unicamente a um médico. Não deverá estar associado a outros objetos. A do tipo agregação não ocorre com o parte todo e pode ser compartilhada entre objetos distintos, por exemplo a instituição em que um médico estudou. 
+
+
+
+```c#
+class Parto : Procedimento
+{
+    //associação agregação
+    Sala sala;
+}
+```
+
+
+
+#### Assim como polimorfismo e sobrescrita, a associação de composição e agregação são escritas da mesma forma mas possuem significados diferentes. Do ponto de vista tratado na UML, essa diferença existe. 
+
+#### A associação comportamental, no caso a dependência é quando lidamos com métodos e não com atributos. Diz respeito ao parâmetro ou a instanciação de um objeto dentro dos métodos.
+
+
+
+## As características de uma associação: unária, múltipla, cardinalidade e navegabilidade
 
 
 
