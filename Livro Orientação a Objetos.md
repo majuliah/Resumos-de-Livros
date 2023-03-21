@@ -469,19 +469,163 @@ class Classe1 : CLasse0, IUm, IDois
 }
 ```
 
+# Conceitos Organizacionais 📑:
 
+#### Com conceitos organizacionais conseguimos agrupar classes que possuem conceitos similares e classes que compartilham a mesma finalidade. Isso também limita acesso a membros da classe, organizando sua utilização dentro do código. 
 
+#### Um pacote é uma organização física ou lógica que separa classes com responsabilidades distintas e com isso se espera que a aplicação seja mais organizada, possibilitando separar classes de finalidades e representatividade diferentes.
 
+#### Em C#, os pacotes possuem nomes de namespaces. Pode ocorrer de forma lógica e não física e pastas e subpastas podem ser criadas. 
+
+```c#
+namespace entidades
+{
+	abstract class Medico : Funcionario 
+	{
+		...
+	}
+}
+namespace entidades
+{
+    class Obstetra : Medico 
+    {
+		...
+	}
+}
+namespace integracaoMinisterio;
+{
+	interface IDemonstrativoOperacional 
+    {
+	...
+	}
+}
+namespace integracaoMinisterio
+{
+	class TransmissaoDadosMinisterio : IDemonstrativoOperacional 
+    {
+		...
+	}
+}
+```
+
+#### Inicialmente com as palavras namespaces não serão criadas pastas no sistema de arquivo mas fará a separação lógica para separação de classes diferentes.
 
  
 
- 
+```c#
+using entidades.Medico;
+namespace integracaoMinisterio
+{
+	class TransmissaoDadosMinisterio : IDemonstrativoOperacional 
+    {
+		...
+	}
+}
+```
+
+#### Aqui estamos acessando uma classe e o namespace em que ela se encontra.
+
+
+
+## Visibilidade
+
+#### Visibilidade ou modificadores de acesso, possuem a finalidade de controlar o acesso e manipulação de classes, atributos e métodos e tem a obrigação de definir até que ponto um membro pode ser utilizado. Public, Protected e Private são as palavras reservadas para a visibilidade dos membros.  Para classes o livro só abordou a visibilidade pública.
+
+- #### Private: Visibilidade mais restritiva, permite que atributos e métodos só sejam manipulados em seu local de definição, ou seja, na classe em que estão sendo implementados. 
+
+  ```c#
+  public class Beneficiario
+  {
+  	private String nome;
+  	DateTime dataNascimento;
+  	private String tipoBeneficiario;
+  	Endereco endereco;
+  	// gets/sets
+  	private void Idade()
+  	{
+  		//cálculo da idade a partir da data de nascimento.
+  	}
+  }
+  public class TestePrivate
+  {
+  	private Beneficiario beneficiario;
+  	//1
+  	String nome = beneficiario.nome;
+      //2
+  	beneficiario.Idade();
+  }
+  
+  ```
+
+  #### nas linhas 1 e 2 o código apresenta erro pois foram definidos como private, então só são acessíveis dentro da classe Beneficiario e na classe TestePrivate é impossível acessa-los. Em C# um atributo é private por padrão.
+
+  
+
+- #### Protected: Só podem ser manipulados no local de criação e em classes que herdem da mesma. Só podem ser manipulados na classe e na subclasse.
+
+  ```c#
+  namespace entidades
+  {
+  	public class Funcionario
+  	{
+  		protected String nome;
+  		protected void Metodo1()
+  	{
+  	// implementação desejada
+  }
+  }
+  namespace entidades
+  {
+  	public class Medico : Funcionario {
+  	private void Metodo() {
+  	//1
+  	String texto = nome;
+  	//2
+  	Metodo1();
+  	}
+  }
+  
+  namespace entidades
+  {
+  	public class Paciente
+  	{
+  		private void metodo()
+  	{
+  	//3
+  	String texto = nome;
+  	//4
+  	metodo1();
+  }
+  ```
+
+  
+
+- #### Public: Todos os membros definidos nessa visibilidade são acessíveis de qualquer lugar independentemente de relacionamento das classes. Tornar todos os membros de uma classe acessíveis possibilita acessos indevidos  e o uso dessa visibilidade deve ser utilizado com cuidado para não ferir conceitos da orientação a objetos. 
+
+  ```c#
+  public class Endereco
+  {
+  	public String logradouro;
+      public int numero;
+  	public String bairro;
+  	public String Logradouro;
+      {
+  	get { return logradouro; }
+  	set { logradouro = value; }
+      }
+  //demais get/set
+  }
+  ```
+
+  #### Para a orientação a objetos, são somente estes 3 modificadores de acesso, mas o c# possui outros como o internal que possibilita membros serem utilizados em qualquer lugar do projeto e o limita apenas ao projeto em questão.
+
+  ## Utilização
+
+  
 
 
 
 
-
-#### 
 
  
 
