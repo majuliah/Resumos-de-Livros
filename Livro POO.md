@@ -358,13 +358,33 @@ class Parto : Procedimento
 
 ## As características de uma associação: unária, múltipla, cardinalidade e navegabilidade
 
+#### Uma associação unária é quando um atributo é de seu próprio tipo, ele se relaciona com ele mesmo. 
 
+#### Uma associação múltipla é quando vários tipos de classe são utilizados na associação. Um exemplo é a classe Parto que possui atributos como Sala e um vetor de médicos no tipo Medico.
 
+```c#
+class Parto : Procedimento
+{
+	Medico[] medicos = new Medico[]{new Anestesista(), new Obstetra(),      new Pediatra()};
+	Sala sala;
+}
+```
 
+#### Nesta classe vemos a cardinalidade. A cardinalidade serve para identificar quantos objetos uma associação possui. Aqui temos exatamente 3 médicos e uma sala envolvidos no procedimento. Cardinalidades podem possuir quantidade fixa ou não.
 
+#### Por fim a navegabilidade se dá por uni ou bidirecional. Unidirecional determina que a associação ocorre somente de um lado, e um exemplo é a classe Parto, onde criou um atributo em parto para o tipo Sala. Caso fosse o contrário, saber qual procedimento uma sala receberá, deveríamos ter um vetor de parto na classe Sala e dessa forma seria possível detectar a navegabilidade que no caso seria bidirecional, onde as duas classes envolvidas possuíam referência uma a outra.
 
-
-
+```c#
+class Parto : Procedimento
+{
+	Medico[] medicos = new Medico[]{new Anestesista(), new Obstetra(), 						 new Pediatra()};
+	Sala sala;
+}
+class Sala
+{
+	Parto[] partos;
+}
+```
 
 
 
