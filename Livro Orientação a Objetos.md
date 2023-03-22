@@ -619,8 +619,12 @@ namespace integracaoMinisterio
 
   #### Para a orientação a objetos, são somente estes 3 modificadores de acesso, mas o c# possui outros como o internal que possibilita membros serem utilizados em qualquer lugar do projeto e o limita apenas ao projeto em questão.
 
-  ## Utilização
+  # Utilização 🥊:
 
+  #### Antes de começar a codificação, e importante ter conhecimento em UML. Aqui podemos aplicar os conceitos identificando onde os podemos utilizar de forma correta. Neste capítulo analizaremos o sistema do hospital, aplicando inserção de domínio para que posteriormente possa ser codificado.
+  
+  ####  
+  
   
 
 
