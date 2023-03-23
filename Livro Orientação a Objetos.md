@@ -623,9 +623,56 @@ namespace integracaoMinisterio
 
   #### Antes de começar a codificação, e importante ter conhecimento em UML. Aqui podemos aplicar os conceitos identificando onde os podemos utilizar de forma correta. Neste capítulo analizaremos o sistema do hospital, aplicando inserção de domínio para que posteriormente possa ser codificado.
   
-  ####  
-  
-  
+  ![modelagem do sistema](https://github.com/majuliah/Resumos-de-Livros/blob/main/img/print39.png?raw=true) 
+
+#### Após modelar e definir as entidades do sistema, devemos criar os atributos e métodos para as respectivas classes.
+
+```
+	Pessoa
+		- String nome
+		- DateTime dataNascimento
+		- Endereco endereco
+	Endereco
+    	- String logradouro
+    	- int numer
+    	- String bairro
+    	- String CEP
+    	- String Cidade
+	Paciente
+    	- String CPF
+    	- Plano plano
+     Plano
+    	- String nomeAgencia
+    	- double valorMensalidade
+    Medico
+    	- String CRM
+    	- Especialidade[] especialidades
+    	- double valorHora
+    Especialidade
+    	- String nome
+    Consulta
+    	- Paciente paciente
+    	- Medico medico
+    	- Datetime dataConsulta
+    	- String receituario
+    	- double valorCOnsulta
+    Procedimento
+    	- Paciente paciente
+    	- Medico[] medico
+    	- DateTime data
+    	- Sala sala
+    	- String observacoes
+    	- double valor
+    	- int tempoDuracao
+    Sala
+    	-string tituloSala
+    	-int numeroSala
+    	-int andarSala
+```
+
+
+
+
 
 
 
