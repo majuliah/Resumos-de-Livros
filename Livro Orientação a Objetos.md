@@ -672,6 +672,34 @@ namespace integracaoMinisterio
 
 
 
+#### Assim como os atributos, os métodos também possuem visibilidade. 
+
+```
+    Paciente
+    	+ void cadastrar(Paciente paciente)
+    	+ void alterar(Paciente paciente)
+    	+ void excluir(Paciente paciente)
+    	+ Paciente consultar(String CPF)
+    	+ Paciente[] consultar(String nome, DateTime dataNascimento)
+    Medico
+    	+ void cadastrar(Medico medico)
+    	+ void alterar(Medico medico)
+    	+ void exlcuir(Medico medico)
+    	+ Medico consultar(int CRM)
+    	+ Medico[] consultar(String nome)
+    Consulta
+    	+ void marcar(Medico medico, Paciente paciente, DateTime data)
+    	+ void cancelar(Procedimento procedimento)
+		+ pesquisarPorPaciente(Paciente paciente)
+	Procedimento
+	    + void marcar(Medico medico, Paciente paciente, DateTime data)
+    	+ void cancelar(Procedimento procedimento)
+	    + Procedimento[] pesquisarPorMedico(Medico medico)
+    	+ abstract double calcularTotal()
+    ~ITransmissaoDadosMinisterioSaude()
+    	_ void gerarDados()	
+```
+
 
 
 
