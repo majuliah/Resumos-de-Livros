@@ -700,7 +700,31 @@ namespace integracaoMinisterio
     	_ void gerarDados()	
 ```
 
+#### Quando criados os métodos, algumas classes não foram citadas e isso ocorre porque nem toda classe tem uma importância dentro do sistema, como Plano por exemplo. No hospital, não há sentido em haver um plano que não esteja atrelado a um paciente e neste caso ao se criar o paciente, o plano será criado junto. 
 
+#### A mesma forma se aplica a endereço e especialidade, levando em consideração os respectivos relacionamentos. 
+
+#### A classe Pessoa é abstrata e generaliza conceitos de médico e paciente, alcançando subtipificação e reúso dos atributos e devido a isto a classe possui apenas métodos básicos que permitem a geração de cadastro, pesquisa, inclusão e consulta como previsto em sistemas orientados a objetos. Procedimento que é uma classe abstrata também possui métodos abstratos.
+
+#### Finalmente, a interface criada possui apenas método responsável por transmitir dados e este processo será feito de acordo com regras do hospital em questão. 
+
+####  
+
+### Codificação 👩‍💻
+
+#### Existem duas vertentes para codificar aplicações: Business Object e Domain Model. 
+
+#### No Business Object, a grande característica da Orientação a Objetos é quebrada, que é a aglutinação de dados e comportamentos da mesma unidade de código. Isso significa que atributos e métodos ficam separados. Esta opção é usada quando é desejado obter alta reusabilidade dos comportamentos mas não deve haver interferência no modelo de entidades da aplicação.  No caso do hospital, se pegássemos a classe Paciente, seriam criadas duas classes, a Paciente e a PacienteBO ou PacienteBusiness, que conteria somente os métodos para manipular os pacientes. Nesta abordagem, a obrigatoriedade da criação de gets e sets que possibilitariam a manipulação dos atributos fora da entidade terminaria por ferir outra característica da Orientação a Objetos, que é o encapsulamento. Utilizar gets e sets para manipular atributos, mesmo que provados pode resultar em comportamentos adversos posteriormente, e por isso é dito que é programar de forma estruturada usando Orientação a Objetos.
+
+#### Mesmo com ressalvas, é uma forma muito utilizada de programação e ocorre porque facilita o processo de codificação, torna o código menos complexo e facilita o entendimento. Quanto mais relacionamentos existirem entre as entidades da aplicação, mais essa abordagem mostrará o seu valor. A seguir um exemplo de codificação desta abordagem:
+
+
+
+
+
+
+
+ 
 
 
 
