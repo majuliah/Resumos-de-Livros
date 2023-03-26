@@ -718,13 +718,67 @@ namespace integracaoMinisterio
 
 #### Mesmo com ressalvas, é uma forma muito utilizada de programação e ocorre porque facilita o processo de codificação, torna o código menos complexo e facilita o entendimento. Quanto mais relacionamentos existirem entre as entidades da aplicação, mais essa abordagem mostrará o seu valor. A seguir um exemplo de codificação desta abordagem:
 
+```c#
+public class CarrinhoDeCompras
+{
+	private String codigo;
+	private Produto[] produtos;
+    
+	public String Codigo
+	{
+         get {return this.codigo;}
+		set {this.codigo = value;}
+	}
+	public Produto[]
+	{
+		set {this.produtos = value;}
+		get {return this.produtos;}
+	}
+}
+public class CarrinhoDeComprasBO
+{
+	public Produtos[] listarProdutos
+	{
+		//lógica de obter todos os produtos a partir de um
+		//repositório de dados
+	}
+    public void adicionarProduto(Produto produto)
+	{
+		//lógica de adicionar um novo produto. Esta deve se
+		//preocupar se o produto novo não já existe.
+	}
+	public void removerProduto(Produto produto)
+	{
+		//lógica de remover o produto do carrinho.
+	}
+	public void esvaziar(Produto produto)
+	{
+		//lógica de remover todos os produtos de uma vez
+	}
+	public void finalizarPedido
+	{
+		//lógica de gerar uma venda a partir do carrinho
+	}
+}
+```
+
+
+
+#### Ao não utilizar o Business Object e evitar o modelo anêmico, seguimos 100% os preceitos da Orientação a Objetos, juntando os dados e comportamentos. Com isso, os métodos de manipulação dos atributos e os atributos ficarão juntos na mesma classe, e uma só é criada, no caso do Paciente do sistema do hospital.
+
+#### Nesta abordagem preza-se a não criação de get e set de forma indiscriminada e estes devem ser uma exceção. Com isso, geramos menor acoplamento entre as classes da aplicação, pois diminuímos a quantidade de classes e consequentemente de relacionamentos. Também não possuímos um modelo de domínio pobre, limitando a simples get e set e atributos. 
+
+
+
+ ## 							Boas práticas na Utilização de Orientação a Objetos 👩‍💻
+
+![img](https://media.tenor.com/Sq7rY9NKKd4AAAAC/oscars-standing-ovation.gif)
+
+#### Embora tenha sido estudado os conceitos da orientação a objetos, na aplicabilidade é necessário cautela. A prática levará a outros níveis igualmente importantes para sempre entender como e quando aplicar os conceitos. A seguir algumas boas práticas na utilização da orientação a objetos:
 
 
 
 
-
-
- 
 
 
 
