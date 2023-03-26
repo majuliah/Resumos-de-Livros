@@ -776,6 +776,109 @@ public class CarrinhoDeComprasBO
 
 #### Embora tenha sido estudado os conceitos da orientação a objetos, na aplicabilidade é necessário cautela. A prática levará a outros níveis igualmente importantes para sempre entender como e quando aplicar os conceitos. A seguir algumas boas práticas na utilização da orientação a objetos:
 
+## 1 - Se preocupe com a coesão e acoplamento🦢:
+
+#### A mais básica e mais importante das boas práticas. Classes não coesas e com alto acoplamento geram insucesso nos projetos, trabalhe com alta coesão e baixo acoplamento. A falta de coesão leva a classes que misturam responsabilidades. Um exemplo de classe não coesa:
+
+```c#
+class Venda
+{
+	private String nomeCliente;
+	private String cpfCliente;
+	private String enderecoEntrega;
+	private int cep;
+	private Debito pagamento;
+	private Produto[] produtos;
+	private String nomeVendedor;
+	private double comissaoVendedor;
+}
+```
+
+#### Aqui é possível que a classe Venda possui muitas características que não dizem respeito diretamente a ela mesma. Uma classe mais coesa seria:
+
+```c#
+public class Venda
+{
+	private Cliente cliente;
+	private Endereco endereco;
+	private Debito pagamento;
+	private Produto[] produtos;
+	private Vendedor vendedor;
+}
+```
+
+#### Neste caso, associações ajudaram a deixar a classe mais enxuta e com o conceito de coesão. Mas ainda existe melhorias neste exemplo, que seria o acoplamento. Neste exemplo a classe venda depende muito de outra classe, a Debito. Caso a enda precise ter outra forma de pagamento, teria de se realizar uma grande alteração para aceitar a nova modalidade no cartão. 
+
+#### Acoplamentos devem existir pois é uma das características básicas da Orientação a objetos, troca de mensagens. Então a solução seria tornar o acoplamento fácil e flexível. Um bom acoplamento possibilita manutenções sem grandes impactos e sem efeitos colaterais e para esta situação, a melhor forma seria criar uma classe abstrata ou interface e os tipos de pagamento herdariam ou implementariam esta em questão. Venda não dependeria diretamente de Debito, Cartão e etc, e sim de um pagamento genérico que pode mudar conforme a necessidade do negócio. 
+
+#### Assim poderíamos alterar a forma de pagamento sem grandes alterações na venda se necessário. A utilização de herança, interface, polimorfismo ajudará a tornar esse acoplamento mais flexível. Qualquer momento a forma de pagamento pode ser mudada, sem afetar a classe Venda. O importante é ter em mente que devemos tornar o acoplamento flexível. 
+
+
+
+## 2- Utilizar Strings com cautela
+
+#### Uso indiscriminado de strings na definição de atributos pode gerar conflitos. Portanto, é necessário se atentar aos tipos de dados.
+
+```c#
+public class Cliente
+{
+	private String nome;
+	private String dataAniversario;
+	private String sexo;
+	private String endereco;
+}
+//uso indevido de strings
+```
+
+```c#
+public class Cliente
+{
+	private String nome;
+	private Date dataAniversario;
+	private Sexo sexo;
+	private Endereco endereco;
+}
+// uso coerente dos tipos de dados, uma realidade mais alinhada com os conceitos de manipulação
+```
+
+
+
+## Objetividade, não tente prever o futuro 🧙‍♀️:
+
+#### Classes não devem ser genéricas demais para que sejam reaproveitadas em todos os contextos possíveis a fim de reaproveitar código, isso prejudica a qualidade do programa. Devemos seguir o Kip It Simple, Stupid, ou seja, criar algo simples e funcional. Quando classes são genéricas demais, os entendimentos ficam prejudicados e elas podem não ter sentido algum e mesmo assim estarem presentes em todo lugar, e acoplamentos altos serão criados, subclasses e classes se associarão a ela e quando for necessário fazer modificações, todo o sistema será afetado.
+
+#### Utilizar herança só com o intuito de reúso é um equivoco, sua grande vantagem é o uso de subtipos , conceitos reais do dia a dia e deve ser utilizado no momento certo.  Uma modelagem eficiente supre as necessidades do momento e são facilmente evoluídas futuramente. 
+
+####  
+
+## Construa métodos mais eficientes🐃:
+
+#### Para criar métodos mais eficientes, é necessário ficar atento a 3 fatores:
+
+1. #### Tamanho: Quanto mais linhas tem um método, mais difícil de entender. Uma boa prática é dividi-lo em partes menores. 
+
+2. #### Repetição de Código: Mesmo com outras melhorias, a repetição de código é um problema a ser evitado. Dentro de sua prórpia classe há diversas situações em que podemos reutilizar códigos como um cálculo matemático por exempo.
+
+3. #### Parâmetros: Passar muitos parâmetros para o método é uma inconsistência e deve ser desestimulada. Quanto mais parâmetros desassociados e em grande quantidade, mais acoplamento se cria com este método. Se algum dia um parâmetro realmente necessário precisar ser adicionado, provavelmente precisarão ser corrigidos vários pontos da aplicação. 
+
+   
+
+ ## Conheça e use coleções 🐇:
+
+#### Arrays, muto utilizados nos exemplos acima, são estruturas limitadas que possuem dificuldades de manipulação, como tamanho fixo, dificuldade de pesquisa e controle de inserção de itens.
+
+#### Tamanho fixo: arrays são criados com seus tamanhos fixos, e se em algum momento for necessário mudar o número de posições, um novo vetor deverá ser criado e depois transferir os valores de um para outro. Se um vetor conter muitas posições, este trabalho será muito custoso, complicado e demorado. Utilizar uma estrutura que possibilite um maior dinamismo é uma boa opção, como os exemplos de listas.
+
+#### Dificuldade de pesquisa: Para encontrar um elemento do vetor, todos os valores devem ser lidos em ordem até que seja encontrado. Isso pode demorar dependendo do tamanho que o vetor tiver. Esta situação poderia ser melhorada.
+
+#### Controle de Inserção: se for necessário averiguar se um item já existe, o mesmo problema acima se repetirá, e se o vetor estiver cheio, será necessário criar outro.  
+
+#### As coleções evitam estas situações, não só com vetores mas com outras estruturas. Estas estruturas passam mais flexibilidade, saber quais são as coleções que ajudarão a otimizar o seu código e sua produção é um bom caminho para um sistema limpo e livre de falhas.
+
+## Mapas📜:
+
+
+
 
 
 
