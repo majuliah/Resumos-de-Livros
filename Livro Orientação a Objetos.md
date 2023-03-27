@@ -815,7 +815,7 @@ public class Venda
 
 
 
-## 2- Utilizar Strings com cautela
+## 2- Utilizar Strings com cautela 🐰:
 
 #### Uso indiscriminado de strings na definição de atributos pode gerar conflitos. Portanto, é necessário se atentar aos tipos de dados.
 
@@ -843,7 +843,7 @@ public class Cliente
 
 
 
-## Objetividade, não tente prever o futuro 🧙‍♀️:
+## 3 -Objetividade, não tente prever o futuro 🧙‍♀️:
 
 #### Classes não devem ser genéricas demais para que sejam reaproveitadas em todos os contextos possíveis a fim de reaproveitar código, isso prejudica a qualidade do programa. Devemos seguir o Kip It Simple, Stupid, ou seja, criar algo simples e funcional. Quando classes são genéricas demais, os entendimentos ficam prejudicados e elas podem não ter sentido algum e mesmo assim estarem presentes em todo lugar, e acoplamentos altos serão criados, subclasses e classes se associarão a ela e quando for necessário fazer modificações, todo o sistema será afetado.
 
@@ -851,7 +851,7 @@ public class Cliente
 
 ####  
 
-## Construa métodos mais eficientes🐃:
+## 4- Construa métodos mais eficientes🐃:
 
 #### Para criar métodos mais eficientes, é necessário ficar atento a 3 fatores:
 
@@ -863,7 +863,7 @@ public class Cliente
 
    
 
- ## Conheça e use coleções 🐇:
+ ## 5- Conheça e use coleções 🐇:
 
 #### Arrays, muto utilizados nos exemplos acima, são estruturas limitadas que possuem dificuldades de manipulação, como tamanho fixo, dificuldade de pesquisa e controle de inserção de itens.
 
@@ -875,13 +875,97 @@ public class Cliente
 
 #### As coleções evitam estas situações, não só com vetores mas com outras estruturas. Estas estruturas passam mais flexibilidade, saber quais são as coleções que ajudarão a otimizar o seu código e sua produção é um bom caminho para um sistema limpo e livre de falhas.
 
-## Mapas📜:
+## 6- Sobrescreva equals, hashcode e tostring📜:
+
+#### Embora não seja obrigatório, é importante sobrescrever estes 3 métodos e vai além de boa prática, pois isso evita resultados inesperados. Em seguida, veremos o resultado de não sobrescrever os métodos:
+
+```c#
+//List
+listaNomes.Remove(new Aluno("Pikachu"));
+listaNomes.Contains(new Aluno("Charmander"));
+//Dictionary
+dictionary.Remove("A3");
+dictionary.ContainsValue(new Aluno("Lorelay"));
+//HashSet
+alunos.Remove(new Aluno("Beiçola"));
+alunos.Contains(new Aluno("Berth"));
+```
+
+#### Se espera que os métodos acima obtenham sucesso e as remoções sejam realizadas com sucesso e pesquisas com o método contais retornem true. Se o método Equals e o hashcode não forem implementados, todas as chamadas falharão. Isso se dá porque o tipo ALuno é definido pelo programador e a linguagem não sabe o que isso significa e apenas aceitam suas definições, então elas não sabem o que torna um aluno igual ao outro. Fazer a comparação com os atributos de um objeto resultará em falhas futuras e o encapsulamento é ferido pois a lógica de igualdade ficará exposta no código o tornando frágil e propício a erros. 
 
 
 
+## 7- As vezes é melhor associar ao invés de herdar 🎃:
+
+#### A verdadeira utilização da herança não é a reutilização mas sim criar subtipos e podemos ter reúso sem haver herança. 
+
+```c#
+public class carrinhoCompras : List
+{
+	...
+}
+```
+
+#### Embora possa parecer a melhor opção pelo array possibilitar armazenar vários objetos, além de ser possível reutilizar todas as facilidades de manipulação de objetos como inserir, excluir, atualizar, etc, vários erros serão apresentados posteriormente, tais como:
+
+- ####  Quebra semântica: Carinho de compras não é uma lista e herança é para criar subtipos, o reúso é apenas uma consequência;
+
+- #### Quebra de encapsulamento: Classes que herdam se tornam uma versão mais específica da superclasse e com isso, a classe que herda tem todos os membros e estado, gerando uma grave quebra de encapsulamento. 
+
+- #### Forte acoplamento: A herança gera acoplamento e uma subclasse é filha de uma superclasse dependendo fortemente dela para existir e caso alterações sejam feitas na classe mãe, as filhas se afetarão gerando mais comportamentos inesperados.
+
+- #### O que fazer: A herança deve ser usada no lugar certo e na hora certa e muitas classes são projetadas somente para serem herdadas. A seguir como o código ficaria com as melhorias:
+
+- ```c#
+  public class CarrinhoCompras
+  {
+  	private List<produto> produtos;
+  	...
+  }
+  ```
+
+  
+
+## 8- Se for o caso, evite a herança ou pelo menos a sobrescrita⚠️:
+
+#### Com todo o tópico 7, uma dúvida surge: Como evitar que determinadas classes não sejam herdadas e evitar situações adversas? As classes não devem ser herdadas e os mecanismos de impossibilitar isto é utilizando o sealed. A hierarquia de classes é finalizada nas classes em que elas foram usadas. 
+
+```c#
+public sealed class String : IComparable, ICloneable, IConvertible
+, IComparable<string>, IEnumerable<char>, IEnumerable, IEquatable<
+string>
+{
+	//exemplo da palavra reservada sealed
+}
+```
+
+#### Quando a classe deve ser herdada mas os métodos não devem ser sobrescritos, o sealeds deve ser implantados neles:
+
+```c#
+public class MinhaClasse
+{
+	public sealed void Metodo1()
+	{
+		...
+     }
+	public void Metodo2()
+	{
+		...
+	}
+}
+```
+
+#### Acima vemos uma classe que pode ser utilizada e seus métodos selados 😏 Em c#, o sealed só pode ser aplicado em classes e métodos e a criação de constantes não é uma forma de proibir a herança.
 
 
 
+## 9- Se preocupe com o encapsulamento ⛳:
+
+####
+
+####
+
+####
 
 
 
