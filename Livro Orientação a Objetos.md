@@ -961,11 +961,64 @@ public class MinhaClasse
 
 ## 9- Se preocupe com o encapsulamento ⛳:
 
-####
+#### Encapsulamentos indicam uma boa qualidade do uso da orientação a objetos. Diversas trocas de mensagens acontecerão e pra realizar as trocas os métodos devem ser executados e justamente nestas criações que devemos ter cuidado. Outra preocupação é o estado interno dos objetos. Aplicações mal protegidas criam dependência entre classes porque os métodos não desempenham bem a função de esconder as complexidades de implementação e atributos terminam sendo acessados diretamente. 
 
-####
+- #### Defina as visibilidades de forma adequada: Classes devem, via de regra, serem públicas e criar classes protegidas só é possível em uma classe interna. Ler mais sobre na documentação do C#. Atributos e métodos devem sempre ser privados para garantir a proteção de informações.  
 
-####
+- #### Cuidado com os usos de get e set: Embora muito usados, eles facilmente quebram o encapsulamento porque mesmo definindo um atributo como privado, se for criado um método set, de nada adiantará a privacidade definida. Bastará chamar o set e impor o valor. 
+
+  1. ### Ao invés de set, faça uma sobrecarga do construtor: Sempre bom uma classe ter um construtor padrão (vazio) devido ao uso de frameworks e afins. É melhor um construtor enviando os valores já desejados do que o uso excessivo de gets e sets. 
+
+  2. ### Ao invés de get, faça métodos de negócios: não exponha diretamente o valor do atributo para depois realizar um processamento com ele. O melhor é disponibilizar o processamento em si e este é um princípio chamado Tell, dont ask que quando menos encapsulado um código, mais pergunta se faz. Um exemplo básico:
+
+     ```c#
+     if (paciente.Fatura.DataPagamento != null)
+     {
+     	//pacienta pagou o plano de saude, então pode ser atendido.
+     }
+     ```
+
+     ### A lógica de saber se o paciente pode ser atendido depende diretamente da data do pagamento e além disto, se mais alguma verificação necessitar ser feita futuramente para determinar o atendimento, mais pontos espalhados na aplicação. Um código que melhora a situação:
+
+     ```c#
+     //Na classe `Paciente`
+     public bool PodeSerAtendito
+     {
+     	get {return this.Fatura.DataPagamento != null;}
+     }
+     	if (paciente.PodeSerAtendido())
+     	{
+     			//processamento necessário
+     	}
+     }
+     ```
+
+     
+
+  3. ### Se for o caso, blinde o estado do objeto definitivamente: Classes imutáveis criam objetos imutáveis, e dependendo da ocasião, é necessário que um objeto mantenha seus valores até o fim de sua vida.
+
+## Saiba usar interface e classe abstrata no momento certo🦐:
+
+#### Uma dúvida comum é quando utiliar classes abstratas ou interface e embora sejam bem parecidas, existem situações em que cada uma se aplica melhor. 
+
+-   Classe abstrata: deve ser molde para outras classes. Implementação direta do conceito de abstração e devido a isto não pode ser instanciada. Pode ou não definir métodos abstratos.
+- Interface: Definição de um contrato ou obrigatoriedade de implementação do serviços providos. Somente as assinaturas dos métodos estão disponíveis deixando para quem implementa a interface prover o comportamento necessário. Por padrão, todos os métodos devem ser públicos e abstratos, ou seja, nenhuma implementação permitida.
+
+#### Embora interfaces sejam utilizadas para emular herança múltipla, esta não é sua finalidade e quem realmente foi criada para ter subtipos são as classes abstratas. Não é um erro emular interfaces para herança e somente devemos ter cuidado para este fim. Emular heranças com interfaces gera forte acoplamento. E o perigo é que deixamos para os implementadores os métodos das interfaces. Quando uma interface for implementada e depois necessitar de alteração, posteriormente todas as suas implementações terão de ser atualizadas. Isso porque como sua definição diz, há uma obrigatoriedade de implementação dos serviços providos. 
+
+ 
+
+## 11- Usar e abusar das facilidades fornecidas por linguagens orientadas a objetos 🪄.
+
+## 12 - Conheça e utilize as  convenções de codificação da linguagem escolhida🎡.
+
+
+
+~Depois da Orientação a Objetos:
+
+
+
+
 
 
 
