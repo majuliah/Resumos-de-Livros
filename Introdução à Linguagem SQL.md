@@ -1,6 +1,6 @@
-#                                    Livro Orientação a Objetos 👩🏽‍🚀🪐
+#                                    Introdução a Linguagem SQL 🐣
 
-​                       ![](https://media2.giphy.com/media/AQRapWCgC7dThyVEYb/giphy.gif?cid=ecf05e47g71icdsmvdpj9c17vielqtj02m9v3sr8z0qoiikm&rid=giphy.gif&ct=g)
+​                       ![]()
 
 ####                                                                                              
 
