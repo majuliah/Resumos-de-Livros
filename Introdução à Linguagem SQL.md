@@ -26,7 +26,7 @@
 
 ### 👾O que é SQLite? 
 
-  
+#### A situação ideal para o uso do SQLite é quando o fluxo de informações e acesso a elas é simples como um documento word. É indicado quando necessita de simplicidade e é uma boa solução para bancos de dados industriais. Como não possui servidor de gerenciamento de acesso, é adequado apenas para fluxos com apenas um usuário, então ele será usado neste treinamento. 
 
 
 
