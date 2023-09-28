@@ -30,3 +30,61 @@
 
 
 
+## 📑Capítulo 4: SELECT:
+
+#### A instrução select é responsável por solicitar dados armazenados no banco e exibi-los. Neste capítulo será visto como selecionar colunas de uma só tabela e formar expressões com elas. 
+
+### 👾Recuperando dados com o SQL
+
+####  A primeira instrução SQL deste livro será:  `SELECT * FROM CUSTUMER`.  O comando select permite selecionar quais as colunas serão acessadas em uma tabela, então a query quer dizer um "selecione todas as colunas da tabela customer".
+
+### 👾Expressões em instruções SELECT:
+
+#### Também é possível executar outras expressões com o select, como uma expressão matemática. Se quisermos selecionar os valores da coluna Preço  da tabela Produto adicionando 7% do valor, a query seria: 
+
+`SELECT  PRODUCT_ID, DESCRIPTION, PRICE, PRICE * 1.07 AS TAXED_PRICE FROM PRODUCT;` 
+
+#### A coluna Taxed_price foi calculada dinamicamente na consulta, e ela não é armazenada no banco, somente é calculada e exibida como resultado da consulta. É um recurso importante do sql que permite armazenar dados em nível simples como somente exibir cálculos.  
+
+#### Ao estudar a consulta, entendemos que do Taxed_Price foi foi gerado um valor para cada registro e demos um nome ao valor calculado através da palavra AS e isso é conhecido como ALIAS, uma forma de apelidar uma expressão ou coluna existente dentro da consulta.  Isso não muda o nome da coluna na tabela, somente na exibição.
+
+`SELECT PRODUCT_ID, DESCRIPTION, PRICE AS UNTAXED_PRICE, PRICE * 1.07 AS TAXED_PRICE FROM PRODUCT;`
+
+###### **Lembrar de sempre usar _ para separar espaços em brancos, ao contrário, gerará erros.
+
+| Operador | Descrição                                        | Exemplo              |
+| -------- | ------------------------------------------------ | -------------------- |
+| +        | Soma dois números                                | STOCK + NEW_SHIPMENT |
+| -        | Subtrai dois números                             | STOCK - NEW_SHIPMENT |
+| /        | Divide dois números                              | STOCK / PALLET_SIZE  |
+| *        | Multiplica dois números                          | PRICE * 1.07         |
+| %        | Divide dois números e retorna o resto da divisão | STOCK % PALLET_SIZE  |
+
+
+
+### 👾Concatenação de texto:
+
+#### Expressões não são utilizadas apenas com números, também podem ser utilizadas com textos e outros tipos simples e quando é utilizada em textos se chama concatenação, que mescla os dados. No SQLite isso é feito com dois pipes. Vamos concatenar os campos city e state da tabela customer:
+
+#### ` SELECT NAME, CITY || ', ' || STATE  AS LOCATION FROM CUSTOMER;`
+
+#### ` SELECT NAME, STREET_ADRESS || ' ' || CITY || ', ' || STATE || ' ' || ZIP AS SHIPPED_ADDRESS FROM CUSTOMER;`
+
+
+
+## 📑Capítulo 5: WHERE:
+
+#### A partir de agora serão acrescidas cláusulas às consultas, como a de filtro conhecida como WHERE.  
+
+### 👾Filtrando registros:
+
+#### 
+
+
+
+
+
+
+
+
+
