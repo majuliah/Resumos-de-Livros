@@ -78,13 +78,95 @@
 
 ### 👾Filtrando registros:
 
-#### 
+#### O banco em que trabalharemos contém uma tabela com 17 colunas. 
+
+#### `SELECT * FROM station_data`;
+
+#### A clausula where é uma forma de filtrar recursos de acordo com o critério desejado. 
 
 
 
+### 👾Usando o WHERE com números:
+
+#### Se estivermos precisando de dados referentes ao ano de 2010, seria muito fácil utilizar o where com um critério simples como este. Com isso, a consulta só retornará dados do ano de 2010:
+
+#### `SELECT * FROM station_data WHERE year = 2010`;
+
+#### O inverso disso seria:
+
+#### `SELECT * FROM station_data WHERE year != 2010`;
+
+#### Já o Between engloba as datas entre o intervalo especificado, as incluindo:
+
+`SELECT * FROM station_data WHERE year BETWEEN 2005 and 2010`;
 
 
 
+### 👾Instruções AND, OR, IN:
 
+#### Se quisermos utilizar a instrução AND, podemos utilizar a query que retorna valores em que o ano seja maior ou igual a 2005 E menor ou igual 2010:
 
+#### `SELECT * FROM station_data WHERE year >= 2005 AND year <= 2010`;
+
+#### Se quiséssemos excluir  os anos 2005 e 2010 da consulta: 
+
+#### `SELECT * FROM station_data WHERE year > 2005 AND year < 2010`;
+
+#### AInda temos a opção OR onde pelo menos um dos critérios deve ser verdadeiro. Se quiséssemos registros dos meses 3,, 6, 9 ou 12, esta seria a instrução correta:
+
+#### `SELECT * FROM station_data WHERE MONTH = 3 OR MONTH = 6 OR MONTH = 9 OR MONTH = 12`;
+
+#### Uma alternativa para que a consulta não fique verbosa é utilizar a instrução IN que fornece uma lista válida de valores:
+
+#### `SELECT * FROM station_data WHERE MONTH NOT IN (3, 6, 9, 12);`
+
+#### E se não quiséssemos estes valores no retorno, basta adicionar o NOT:
+
+#### `SELECT * FROM station_data WHERE MONTH NOT IN (3, 6, 9, 12);`
+
+#### Também podemos executar operações para obtermos resultado, como esta query que retorna todos os meses cujo resto da divisão por 3 = 0, ou seja, cujo número do mês é divisível por 3:
+
+#### `SELECT * FROM station_data WHERE MONTH % 3 = 0;`
+
+### 👾Utilizando WHERE com texto:
+
+#### Para executar a cláusula com texto, seguimos as mesmas regras que com os números (utilizando =, AND, OR, IN) só que devemos informar os valores entre aspas simples.
+
+#### `SELECT * FROM station_data WHERE report_code = '513A63';`
+
+#### Esta regra também se aplica a cláusula IN:
+
+#### `SELECT * FROM station_data WHERE report_code IN ('513A63', '1F8A7B', 'EF616A');`
+
+#### Existem outras instruções interessantes que usam funções como a length() que conta o número de caracteres de um valor específico. Se fosse aplicar um controle de qualidade onde os report_codes possuíssem 6 caracteres, esta função seria ideal.
+
+#### `SELECT * FROM station_data WHERE length(report_code) != 6 `;
+
+#### Outra operação importante é utilizando o LIKE onde o % representa qualquer número de caracteres e _ um único caractere. Se quiséssemos encontrar todos os relatórios que começam com a letra A, seguida por quaisquer caracteres, seria assim:
+
+#### `SELECT * FROM station_data WHERE report_code LIKE 'A%';`
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
 
