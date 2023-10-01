@@ -146,6 +146,116 @@
 
 #### `SELECT * FROM station_data WHERE report_code LIKE 'A%';`
 
+#### Agora se quiséssemos encontrar os códigos do relatório que tivessem B como primeiro caractere e C como o segundo, usaríamos o _ para a segunda posição e qualquer número de caracteres após o C:
+
+#### `SELECT * FROM station_data WHERE report_code LIKE 'B_C%';`
+
+###### ***Não confundir o uso do %, para operações matemáticas ele é um MOD e para operações com texto ele é um curinga de padrão de texto.
+
+#### Existem outras funções de texto importantes que podem ser consultadas no apêndice ou em documentações. Aqui neste estudo ela será encontrada no arquivo QuerysExercices.
+
+
+
+### 👾Utilizando WHERE com booleanos:
+
+#### Sabemos que booleano são valores de verdadeiro ou falso, e geralmente em BD os falsos são 0 e os verdadeiros são 1, sendo que algumas plataformas permitem o uso explicito da palavra **true** ou **false**:
+
+#### ` SELECT * FROM station_data WHERE tornado = true AND hail = true;`
+
+#### Porém o SQLITE não permite a utilização desses valores, sendo necessário utilizar 0 e 1.
+
+#### ` SELECT * FROM station_data WHERE tornado = 1 AND hail = 1;`
+
+#### Todos os campos de uma clausula WHERE no fim das contas são do tipo booleano, então se quiséssemos uma query com true, não seria necessário passar o = 1. Porém a qualificação de condições falsas é necessário a passagem do parâmetro 0.
+
+#### ` SELECT * FROM station_data WHERE tornado AND hail;` -> true
+
+#### ` SELECT * FROM station_data WHERE tornado = 0 AND hail = 0;` -> false
+
+#### Também é possível usar a palavra NOT que nega uma condição:
+
+#### `SELECT * FROM station_data WHERE NOT tornado AND hail = 0;`
+
+
+
+### 👾Manipulando NULL:
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
+####
+
 ####
 
 ####

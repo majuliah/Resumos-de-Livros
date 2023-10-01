@@ -13,4 +13,13 @@ SELECT * FROM station_data WHERE MONTH % 3 = 0;
 SELECT * FROM station_data WHERE report_code = '513A63';
 SELECT * FROM station_data WHERE report_code IN ('513A63', '1F8A7B', 'EF616A');
 SELECT * FROM station_data WHERE length(report_code) != 6;
+
 SELECT * FROM station_data WHERE report_code LIKE 'A%';
+SELECT * FROM station_data WHERE report_code LIKE 'B_C%';
+SELECT * FROM station_data WHERE report_code LIKE 'BC%';
+SELECT * FROM station_data WHERE report_code LIKE '_BC%';
+
+SELECT * FROM station_data WHERE tornado = true AND hail = true; sqlite não funciona;
+SELECT * FROM station_data WHERE tornado = 1 AND hail = 1;
+SELECT * FROM station_data WHERE tornado AND hail;
+
