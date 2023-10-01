@@ -180,103 +180,105 @@
 
 ### 👾Manipulando NULL:
 
-####
+#### Valores nulos são aqueles que não possuem valor, nem o default para aquele tipo de dado. Ele é a ausência completa de qualquer conteúdo, e possuem valores nulos em colunas do sation_data. Valores nulos não podem ser atribuídos tradicionalmente com o "=", são necessários instruções ***IS NULL*** ou ***IS NOT NULL*** para identificar estes valoresPara obter todos os registros sem definição de profundidade da neve ~snow_depth~ podemos executar a consulta:
+
+#### `SELECT * FROM station_data WHERE snow_depth IS NULL;`
+
+#### Os valores nulos servem para notificar a capacidade de determinada área de identificar valores. Não seria coeso colocar 0 (para definir como false) se a coluna registra se houve ou não neve. Mas se uma estação não tivesse equipamento necessário para medir neve, mas nevasse? Colocar o 0 diria que não nevou, portanto o nulo é a melhor opção. A utilização de nulos é ambígua e dificilmente conseguimos determinar sua usabilidade em uma empresa, e é necessário ter uma documentação que informe o ponto de vista da tabela nula.
+
+###### Valores nulos não devem ser confundidos com textos vazios '' ou textos com espaço em branco ' '. Estes são valores e não nulos. 
+
+#### Os valores nulos são de difícil manipulação. Se quiséssemos que a precipitation fosse <= 0.5 ou nulo, como faríamos essa verificação já que nulo nem 0 é? Valores nulos raramente se qualificam e quase sempre ficam de fora das instruções where. Neste caso utilizamos o OR:
+
+#### `SELECT * FROM station_data WHERE precipitation IS NULL OR precipitation <= 0.5;`
+
+#### Uma forma elegante de criar um alias para caso o campo seja nulo, é a utilização da função coalesce(), onde passamos dois parâmetros: o primeiro é o campo em que tem possíveis valores nulos e o segundo é o valor que o campo vai assumir caso o número realmente seja nulo:
+
+#### `SELECT * FROM station_data WHERE coalesce(precipitation, 0) <= 0.5;`
+
+#### Esta função pode ser usada em outras funções como a select por exemplo, ela é útil caso queira melhorar a aparência de um relatório sem exibir os NULLS e sim um placeholder como (N/A), NONE, etc.
+
+### 👾Agrupando condições:
+
+#### Quando agrupar condições, é necessário atenção para que as condições sejam atendidas corretamente. Um exemplo:
+
+#### ` SELECT * FROM station_data WHERE rain = 1 AND temperature <= 32 OR snow_depth > 0; `
+
+#### Na query acima temos um problema, embora tecnicamente funcione. Há uma ambiguidade e o SQL por si só consegue interromper esta query. Isso porque não definimos corretamente qual condição pertence ao AND e quais pertencem ao OR. Dessa forma, é aconselhado agrupar as condições entre parênteses: 
+
+#### `SELECT * FROM station_data WHERE (rain = 1 AND temperature <= 32) OR snow_depth > 0;`
+
+#### O agrupamento em parênteses é crucial principalmente em querys mais avançadas. 
+
+## 📑Capítulo 6: GROUP BY & ORDER BY:
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
+
+#### 
 
 ####
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
+#### 
 
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
-
-####
+#### 
 
