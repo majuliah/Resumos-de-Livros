@@ -212,21 +212,21 @@
 
 ## 📑Capítulo 6: GROUP BY & ORDER BY:
 
-#### 
+#### Agregação de dados, cocnhecida como totalização, resumo ou agrupamento é a forma de criar um total de vários registros, com soma, mínimo, máximo, contagem, média... 
 
-#### 
+### 👾Agrupando registros:
 
-#### 
+#### Agregação simples: contar o número de registro da tabela:
 
-#### 
+#### `SELECT COUNT(*) AS record_cound FROM station_data`;
 
-#### 
+#### Count(*) significa contar os registros e podemos usar com outras funções como WHERE. Contaremos os registros que possuiam tornado:
 
-#### 
+#### `SELECT COUNT(*) AS record_count FROM station_data WHERE tornado = 1`;
 
-#### 
+#### Agora vamos separar a contagem por ano:
 
-#### 
+#### `SELECT year, COUNT(*) AS record_count FROM station_data WHERE tornado = 1`;
 
 #### 
 
