@@ -228,11 +228,11 @@
 
 #### `SELECT year, COUNT(*) AS record_count FROM station_data WHERE tornado = 1`;
 
-#### 
+#### Com 3 mil registros retornados, podemos agrupar por ano:
 
-#### 
+#### `SELECT year, COUNT(*) AS record_count FROM station_data WHERE tornado = 1 GROUP BY Year`;
 
-#### 
+#### Dessa forma os dados tomam mais significado porque podemos comparar os totais de tornado ao longo dos anos. 
 
 #### 
 
