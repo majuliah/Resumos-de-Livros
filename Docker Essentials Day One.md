@@ -18,3 +18,6 @@
 
 #### Isolamento de 
 
+## Sistema de Camadas: Copy-On-Write🧐
+
+#### 
